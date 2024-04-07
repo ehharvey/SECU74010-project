@@ -6,6 +6,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>SECU74010-project</RootNamespace>
     <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bunit" Version="1.27.17" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.TestPlatform" Version="17.9.0" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="xunit" Version="2.7.0" PrivateAssets="all" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
 
 </Project>

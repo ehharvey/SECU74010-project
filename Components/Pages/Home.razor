@@ -1,7 +1,26 @@
 ﻿@page "/"
+@using Microsoft.EntityFrameworkCore;
+@inject MyDbContext MyDbContext;
 
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
+@if (user != null)
+{
+    <p>Welcome, @user.Email!</p>
+}
+else
+{
+    <p>Welcome to your new app.</p>
+}
+
 Welcome to your new app.
+
+@code {
+    private Models.Login? user;
+    protected override async Task OnInitializedAsync()
+    {
+        user = await MyDbContext.Logins.FirstOrDefaultAsync();
+    }
+}

@@ -1,4 +1,4 @@
-using SECU74010_project.Components;
+using StoreWebApp.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 

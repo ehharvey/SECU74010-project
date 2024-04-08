@@ -1,0 +1,10 @@
+@inherits TestContext
+
+@code {
+    [Fact]
+    public void TestHomeBasic()
+    {
+        var cut = RenderComponent<StoreWebApp.Components.Pages.Home>();
+        cut.MarkupMatches("<h1>Hello, world!</h1>");
+    }
+}

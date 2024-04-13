@@ -1,0 +1,32 @@
+﻿@page "/"
+@using Microsoft.EntityFrameworkCore;
+@inject Models.ILoginRepository LoginRepository
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+@if (user != null)
+{
+    <p>Welcome, @user</p>
+}
+else
+{
+    <p>Welcome to your new app.</p>
+}
+
+@code {
+    private string? user;
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            user = await LoginRepository.GetLoggedInUserAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            user = null;
+        }
+    }
+}

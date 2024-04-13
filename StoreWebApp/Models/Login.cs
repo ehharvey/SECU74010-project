@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
 // A Login is a user's credentials (email and password)
-namespace SECU74010_project.Models
+namespace StoreWebApp.Models
 {
     public class Login
     {
@@ -30,5 +30,22 @@ namespace SECU74010_project.Models
         public int Id { get; }
         public string Email { get; set; }
         public string Password { get; set; }
+    }
+
+    public interface ILoginRepository
+    {
+
+        void AddLogin(Login login);
+
+        Task AddLoginAsync(Login login);
+
+        string? GetLoggedInUser();
+
+        // Make GetLoggedInUser() awaitable
+        Task<string?> GetLoggedInUserAsync();
+
+        void SaveChanges();
+
+        Task SaveChangesAsync();  
     }
 }

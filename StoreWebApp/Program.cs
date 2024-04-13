@@ -1,15 +1,18 @@
-using SECU74010_project.Components;
 using Microsoft.EntityFrameworkCore;
+using StoreWebApp.Components;
+using StoreWebApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<MyDbContext>(options =>
+    options.UseSqlite("Data Source=store.db"));
 
+// Add IloginRepository to the services using the MyDbContext
+builder.Services.AddScoped<ILoginRepository>(provider => provider.GetRequiredService<MyDbContext>());
+
+// Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-
-// Add database context
-builder.Services.AddDbContext<MyDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

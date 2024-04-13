@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace SECU74010project.Migrations
+namespace StoreWebApp.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

@@ -1,0 +1,23 @@
+@using Microsoft.EntityFrameworkCore
+@inherits TestContext
+
+
+@code {
+    [Fact]
+    public void TestHomeBasic()
+    {
+        // Arrange
+        // Render Home with mock db context
+        var mockDbContext = new MockDbContext(options: MockDb.GetOptions());
+
+        Services.AddSingleton<MockDbContext>(mockDbContext);
+
+        Services.AddScoped<StoreWebApp.Models.ILoginRepository>(sp => sp.GetRequiredService<MockDbContext>());
+        var cut = RenderComponent<StoreWebApp.Components.Pages.Home>();
+
+        var expected =
+            @"<h1>Hello, world!</h1>
+            <p>Welcome, mocktestuser</p>";
+        cut.MarkupMatches(expected);
+    }
+}

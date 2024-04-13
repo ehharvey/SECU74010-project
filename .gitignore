@@ -1,6 +1,6 @@
 # Ignore build output
-/bin/
-/obj/
+bin/
+obj/
 
 # Ignore NuGet packages
 /packages/
@@ -22,7 +22,7 @@
 *.tmp
 
 # Ignore publish output
-/wwwroot/
+wwwroot/
 
 # Ignore node_modules folder
 node_modules/
@@ -32,3 +32,5 @@ npm-debug.log
 
 # Ignore Visual Studio Code settings
 .vscode/
+
+*.db

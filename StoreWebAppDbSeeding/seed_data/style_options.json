@@ -1,0 +1,4127 @@
+[
+  {
+    "Id": 222340,
+    "StyleName": "Size",
+    "StyleValue": ".28GM"
+  },
+  {
+    "Id": 222118,
+    "StyleName": "Size",
+    "StyleValue": ".35GM"
+  },
+  {
+    "Id": 14004,
+    "StyleName": "Size",
+    "StyleValue": "0-1 YEAR"
+  },
+  {
+    "Id": 7531,
+    "StyleName": "Size",
+    "StyleValue": "0-1Y"
+  },
+  {
+    "Id": 70996,
+    "StyleName": "Size",
+    "StyleValue": "0-2Y"
+  },
+  {
+    "Id": 431059,
+    "StyleName": "Size",
+    "StyleValue": "0-3M"
+  },
+  {
+    "Id": 207870,
+    "StyleName": "Size",
+    "StyleValue": "0.25gm"
+  },
+  {
+    "Id": 207937,
+    "StyleName": "Size",
+    "StyleValue": "0.28g"
+  },
+  {
+    "Id": 207871,
+    "StyleName": "Size",
+    "StyleValue": "0.28gm"
+  },
+  {
+    "Id": 208834,
+    "StyleName": "Size",
+    "StyleValue": "0.35GM"
+  },
+  {
+    "Id": 222348,
+    "StyleName": "Size",
+    "StyleValue": "0.35g"
+  },
+  {
+    "Id": 208835,
+    "StyleName": "Size",
+    "StyleValue": "0.35gm"
+  },
+  {
+    "Id": 482018,
+    "StyleName": "Size",
+    "StyleValue": "0.5LT"
+  },
+  {
+    "Id": 5920,
+    "StyleName": "Size",
+    "StyleValue": "0.6L"
+  },
+  {
+    "Id": 5032,
+    "StyleName": "Size",
+    "StyleValue": "0.6LTR"
+  },
+  {
+    "Id": 214115,
+    "StyleName": "Size",
+    "StyleValue": "09g"
+  },
+  {
+    "Id": 113856,
+    "StyleName": "Size",
+    "StyleValue": "0M-3M"
+  },
+  {
+    "Id": 15880,
+    "StyleName": "Size",
+    "StyleValue": "1(2-4YRS)"
+  },
+  {
+    "Id": 14005,
+    "StyleName": "Size",
+    "StyleValue": "1-2 YEAR"
+  },
+  {
+    "Id": 57567,
+    "StyleName": "Size",
+    "StyleValue": "1-2Y"
+  },
+  {
+    "Id": 209810,
+    "StyleName": "Size",
+    "StyleValue": "1.14gm"
+  },
+  {
+    "Id": 207878,
+    "StyleName": "Size",
+    "StyleValue": "1.15gm"
+  },
+  {
+    "Id": 222112,
+    "StyleName": "Size",
+    "StyleValue": "1.1GM"
+  },
+  {
+    "Id": 208918,
+    "StyleName": "Size",
+    "StyleValue": "1.1gm"
+  },
+  {
+    "Id": 222356,
+    "StyleName": "Size",
+    "StyleValue": "1.2GM"
+  },
+  {
+    "Id": 207939,
+    "StyleName": "Size",
+    "StyleValue": "1.2g"
+  },
+  {
+    "Id": 207795,
+    "StyleName": "Size",
+    "StyleValue": "1.2gm"
+  },
+  {
+    "Id": 207668,
+    "StyleName": "Size",
+    "StyleValue": "1.2ml"
+  },
+  {
+    "Id": 222046,
+    "StyleName": "Size",
+    "StyleValue": "1.41GM"
+  },
+  {
+    "Id": 207938,
+    "StyleName": "Size",
+    "StyleValue": "1.6gm"
+  },
+  {
+    "Id": 207815,
+    "StyleName": "Size",
+    "StyleValue": "1.7g"
+  },
+  {
+    "Id": 207814,
+    "StyleName": "Size",
+    "StyleValue": "1.7gm"
+  },
+  {
+    "Id": 207391,
+    "StyleName": "Size",
+    "StyleValue": "1.8ml"
+  },
+  {
+    "Id": 72360,
+    "StyleName": "Size",
+    "StyleValue": "10"
+  },
+  {
+    "Id": 42363,
+    "StyleName": "Size",
+    "StyleValue": "10 Year"
+  },
+  {
+    "Id": 18506,
+    "StyleName": "Size",
+    "StyleValue": "10 Yrs"
+  },
+  {
+    "Id": 83104,
+    "StyleName": "Size",
+    "StyleValue": "10+YS"
+  },
+  {
+    "Id": 42431,
+    "StyleName": "Size",
+    "StyleValue": "10-11 Year"
+  },
+  {
+    "Id": 42423,
+    "StyleName": "Size",
+    "StyleValue": "10-11Y"
+  },
+  {
+    "Id": 73382,
+    "StyleName": "Size",
+    "StyleValue": "10/11"
+  },
+  {
+    "Id": 73002,
+    "StyleName": "Size",
+    "StyleValue": "100"
+  },
+  {
+    "Id": 188820,
+    "StyleName": "Size",
+    "StyleValue": "100CM"
+  },
+  {
+    "Id": 214122,
+    "StyleName": "Size",
+    "StyleValue": "100G"
+  },
+  {
+    "Id": 207477,
+    "StyleName": "Size",
+    "StyleValue": "100GM"
+  },
+  {
+    "Id": 214126,
+    "StyleName": "Size",
+    "StyleValue": "100GMS"
+  },
+  {
+    "Id": 82864,
+    "StyleName": "Size",
+    "StyleValue": "100ML"
+  },
+  {
+    "Id": 132586,
+    "StyleName": "Size",
+    "StyleValue": "100ML/150ML"
+  },
+  {
+    "Id": 213939,
+    "StyleName": "Size",
+    "StyleValue": "100g"
+  },
+  {
+    "Id": 207483,
+    "StyleName": "Size",
+    "StyleValue": "100gm"
+  },
+  {
+    "Id": 109838,
+    "StyleName": "Size",
+    "StyleValue": "100ml"
+  },
+  {
+    "Id": 132572,
+    "StyleName": "Size",
+    "StyleValue": "100ml/150ml"
+  },
+  {
+    "Id": 116639,
+    "StyleName": "Size",
+    "StyleValue": "105"
+  },
+  {
+    "Id": 207496,
+    "StyleName": "Size",
+    "StyleValue": "10GM"
+  },
+  {
+    "Id": 5866,
+    "StyleName": "Size",
+    "StyleValue": "10L"
+  },
+  {
+    "Id": 42497,
+    "StyleName": "Size",
+    "StyleValue": "10M"
+  },
+  {
+    "Id": 183877,
+    "StyleName": "Size",
+    "StyleValue": "10ML"
+  },
+  {
+    "Id": 42321,
+    "StyleName": "Size",
+    "StyleValue": "10Y"
+  },
+  {
+    "Id": 127234,
+    "StyleName": "Size",
+    "StyleValue": "10YRS"
+  },
+  {
+    "Id": 129426,
+    "StyleName": "Size",
+    "StyleValue": "10Yrs"
+  },
+  {
+    "Id": 214073,
+    "StyleName": "Size",
+    "StyleValue": "10g"
+  },
+  {
+    "Id": 207930,
+    "StyleName": "Size",
+    "StyleValue": "10gm"
+  },
+  {
+    "Id": 129474,
+    "StyleName": "Size",
+    "StyleValue": "10y"
+  },
+  {
+    "Id": 83106,
+    "StyleName": "Size",
+    "StyleValue": "11+YS"
+  },
+  {
+    "Id": 42430,
+    "StyleName": "Size",
+    "StyleValue": "11-12 Year"
+  },
+  {
+    "Id": 42422,
+    "StyleName": "Size",
+    "StyleValue": "11-12Y"
+  },
+  {
+    "Id": 145965,
+    "StyleName": "Size",
+    "StyleValue": "11-12YRS"
+  },
+  {
+    "Id": 152947,
+    "StyleName": "Size",
+    "StyleValue": "11-12Yrs"
+  },
+  {
+    "Id": 57563,
+    "StyleName": "Size",
+    "StyleValue": "11-13Y"
+  },
+  {
+    "Id": 207792,
+    "StyleName": "Size",
+    "StyleValue": "11.2ml"
+  },
+  {
+    "Id": 207791,
+    "StyleName": "Size",
+    "StyleValue": "11.8ml"
+  },
+  {
+    "Id": 188109,
+    "StyleName": "Size",
+    "StyleValue": "11/12"
+  },
+  {
+    "Id": 146266,
+    "StyleName": "Size",
+    "StyleValue": "11/12Yrs"
+  },
+  {
+    "Id": 145881,
+    "StyleName": "Size",
+    "StyleValue": "11/12yrs"
+  },
+  {
+    "Id": 100071,
+    "StyleName": "Size",
+    "StyleValue": "110ML"
+  },
+  {
+    "Id": 189637,
+    "StyleName": "Size",
+    "StyleValue": "11ML"
+  },
+  {
+    "Id": 72361,
+    "StyleName": "Size",
+    "StyleValue": "12"
+  },
+  {
+    "Id": 18214,
+    "StyleName": "Size",
+    "StyleValue": "12 Months"
+  },
+  {
+    "Id": 42362,
+    "StyleName": "Size",
+    "StyleValue": "12 Year"
+  },
+  {
+    "Id": 18507,
+    "StyleName": "Size",
+    "StyleValue": "12 Yrs"
+  },
+  {
+    "Id": 83105,
+    "StyleName": "Size",
+    "StyleValue": "12+YS"
+  },
+  {
+    "Id": 76152,
+    "StyleName": "Size",
+    "StyleValue": "12/13"
+  },
+  {
+    "Id": 178938,
+    "StyleName": "Size",
+    "StyleValue": "120ML"
+  },
+  {
+    "Id": 214020,
+    "StyleName": "Size",
+    "StyleValue": "120g"
+  },
+  {
+    "Id": 203629,
+    "StyleName": "Size",
+    "StyleValue": "120ml"
+  },
+  {
+    "Id": 96544,
+    "StyleName": "Size",
+    "StyleValue": "125ML"
+  },
+  {
+    "Id": 96546,
+    "StyleName": "Size",
+    "StyleValue": "125ml"
+  },
+  {
+    "Id": 100586,
+    "StyleName": "Size",
+    "StyleValue": "129"
+  },
+  {
+    "Id": 42496,
+    "StyleName": "Size",
+    "StyleValue": "12M"
+  },
+  {
+    "Id": 153686,
+    "StyleName": "Size",
+    "StyleValue": "12M`"
+  },
+  {
+    "Id": 42320,
+    "StyleName": "Size",
+    "StyleValue": "12Y"
+  },
+  {
+    "Id": 127233,
+    "StyleName": "Size",
+    "StyleValue": "12YRS"
+  },
+  {
+    "Id": 129425,
+    "StyleName": "Size",
+    "StyleValue": "12Yrs"
+  },
+  {
+    "Id": 207973,
+    "StyleName": "Size",
+    "StyleValue": "12gm"
+  },
+  {
+    "Id": 136019,
+    "StyleName": "Size",
+    "StyleValue": "12yrs"
+  },
+  {
+    "Id": 32805,
+    "StyleName": "Size",
+    "StyleValue": "13-14Y"
+  },
+  {
+    "Id": 207909,
+    "StyleName": "Size",
+    "StyleValue": "130ml"
+  },
+  {
+    "Id": 20808,
+    "StyleName": "Size",
+    "StyleValue": "13M"
+  },
+  {
+    "Id": 72362,
+    "StyleName": "Size",
+    "StyleValue": "14"
+  },
+  {
+    "Id": 42361,
+    "StyleName": "Size",
+    "StyleValue": "14 Year"
+  },
+  {
+    "Id": 18508,
+    "StyleName": "Size",
+    "StyleValue": "14 Yrs"
+  },
+  {
+    "Id": 57562,
+    "StyleName": "Size",
+    "StyleValue": "14-16Y"
+  },
+  {
+    "Id": 185283,
+    "StyleName": "Size",
+    "StyleValue": "14X15IN"
+  },
+  {
+    "Id": 42319,
+    "StyleName": "Size",
+    "StyleValue": "14Y"
+  },
+  {
+    "Id": 127232,
+    "StyleName": "Size",
+    "StyleValue": "14YRS"
+  },
+  {
+    "Id": 135893,
+    "StyleName": "Size",
+    "StyleValue": "14Yrs"
+  },
+  {
+    "Id": 82879,
+    "StyleName": "Size",
+    "StyleValue": "150ML"
+  },
+  {
+    "Id": 100140,
+    "StyleName": "Size",
+    "StyleValue": "150ML/100ML"
+  },
+  {
+    "Id": 100186,
+    "StyleName": "Size",
+    "StyleValue": "150MLEACH"
+  },
+  {
+    "Id": 82877,
+    "StyleName": "Size",
+    "StyleValue": "150ml"
+  },
+  {
+    "Id": 114419,
+    "StyleName": "Size",
+    "StyleValue": "150ml/30ml"
+  },
+  {
+    "Id": 238164,
+    "StyleName": "Size",
+    "StyleValue": "150mlx3"
+  },
+  {
+    "Id": 117299,
+    "StyleName": "Size",
+    "StyleValue": "155ml"
+  },
+  {
+    "Id": 5863,
+    "StyleName": "Size",
+    "StyleValue": "15L"
+  },
+  {
+    "Id": 8062,
+    "StyleName": "Size",
+    "StyleValue": "15LT"
+  },
+  {
+    "Id": 207464,
+    "StyleName": "Size",
+    "StyleValue": "15ML"
+  },
+  {
+    "Id": 214350,
+    "StyleName": "Size",
+    "StyleValue": "15g"
+  },
+  {
+    "Id": 207957,
+    "StyleName": "Size",
+    "StyleValue": "15gm"
+  },
+  {
+    "Id": 207482,
+    "StyleName": "Size",
+    "StyleValue": "15ml"
+  },
+  {
+    "Id": 72363,
+    "StyleName": "Size",
+    "StyleValue": "16"
+  },
+  {
+    "Id": 6361,
+    "StyleName": "Size",
+    "StyleValue": "16L"
+  },
+  {
+    "Id": 63027,
+    "StyleName": "Size",
+    "StyleValue": "16Y"
+  },
+  {
+    "Id": 127231,
+    "StyleName": "Size",
+    "StyleValue": "16YRS"
+  },
+  {
+    "Id": 135892,
+    "StyleName": "Size",
+    "StyleValue": "16Yrs"
+  },
+  {
+    "Id": 305049,
+    "StyleName": "Size",
+    "StyleValue": "17"
+  },
+  {
+    "Id": 214031,
+    "StyleName": "Size",
+    "StyleValue": "170ml"
+  },
+  {
+    "Id": 172453,
+    "StyleName": "Size",
+    "StyleValue": "175ml"
+  },
+  {
+    "Id": 82442,
+    "StyleName": "Size",
+    "StyleValue": "18"
+  },
+  {
+    "Id": 18215,
+    "StyleName": "Size",
+    "StyleValue": "18 Months"
+  },
+  {
+    "Id": 214092,
+    "StyleName": "Size",
+    "StyleValue": "180g"
+  },
+  {
+    "Id": 214004,
+    "StyleName": "Size",
+    "StyleValue": "18G"
+  },
+  {
+    "Id": 42498,
+    "StyleName": "Size",
+    "StyleValue": "18M"
+  },
+  {
+    "Id": 219991,
+    "StyleName": "Size",
+    "StyleValue": "18g"
+  },
+  {
+    "Id": 214328,
+    "StyleName": "Size",
+    "StyleValue": "190ml"
+  },
+  {
+    "Id": 185271,
+    "StyleName": "Size",
+    "StyleValue": "19x16IN"
+  },
+  {
+    "Id": 4955,
+    "StyleName": "Size",
+    "StyleValue": "1LTR"
+  },
+  {
+    "Id": 431062,
+    "StyleName": "Size",
+    "StyleValue": "1Y"
+  },
+  {
+    "Id": 129387,
+    "StyleName": "Size",
+    "StyleValue": "1Yrs"
+  },
+  {
+    "Id": 208914,
+    "StyleName": "Size",
+    "StyleValue": "1ml"
+  },
+  {
+    "Id": 38978,
+    "StyleName": "Size",
+    "StyleValue": "2 Year"
+  },
+  {
+    "Id": 18147,
+    "StyleName": "Size",
+    "StyleValue": "2 Yrs"
+  },
+  {
+    "Id": 15881,
+    "StyleName": "Size",
+    "StyleValue": "2(5-7YRS)"
+  },
+  {
+    "Id": 14006,
+    "StyleName": "Size",
+    "StyleValue": "2-3 YEAR"
+  },
+  {
+    "Id": 72252,
+    "StyleName": "Size",
+    "StyleValue": "2-3Y"
+  },
+  {
+    "Id": 57566,
+    "StyleName": "Size",
+    "StyleValue": "2-4Y"
+  },
+  {
+    "Id": 214104,
+    "StyleName": "Size",
+    "StyleValue": "2.1g"
+  },
+  {
+    "Id": 208598,
+    "StyleName": "Size",
+    "StyleValue": "2.2ml"
+  },
+  {
+    "Id": 207980,
+    "StyleName": "Size",
+    "StyleValue": "2.45gm"
+  },
+  {
+    "Id": 207408,
+    "StyleName": "Size",
+    "StyleValue": "2.55ml"
+  },
+  {
+    "Id": 222115,
+    "StyleName": "Size",
+    "StyleValue": "2.5GM"
+  },
+  {
+    "Id": 208932,
+    "StyleName": "Size",
+    "StyleValue": "2.5ML"
+  },
+  {
+    "Id": 208805,
+    "StyleName": "Size",
+    "StyleValue": "2.5gm"
+  },
+  {
+    "Id": 207952,
+    "StyleName": "Size",
+    "StyleValue": "2.5ml"
+  },
+  {
+    "Id": 145915,
+    "StyleName": "Size",
+    "StyleValue": "2/3Yrs"
+  },
+  {
+    "Id": 82443,
+    "StyleName": "Size",
+    "StyleValue": "20"
+  },
+  {
+    "Id": 100111,
+    "StyleName": "Size",
+    "StyleValue": "200ML"
+  },
+  {
+    "Id": 100178,
+    "StyleName": "Size",
+    "StyleValue": "200ML/150ML"
+  },
+  {
+    "Id": 100128,
+    "StyleName": "Size",
+    "StyleValue": "200MLEACH"
+  },
+  {
+    "Id": 117302,
+    "StyleName": "Size",
+    "StyleValue": "200ml"
+  },
+  {
+    "Id": 6333,
+    "StyleName": "Size",
+    "StyleValue": "20L"
+  },
+  {
+    "Id": 5046,
+    "StyleName": "Size",
+    "StyleValue": "20LTRS"
+  },
+  {
+    "Id": 207925,
+    "StyleName": "Size",
+    "StyleValue": "20ML"
+  },
+  {
+    "Id": 209842,
+    "StyleName": "Size",
+    "StyleValue": "20gm"
+  },
+  {
+    "Id": 207926,
+    "StyleName": "Size",
+    "StyleValue": "20ml"
+  },
+  {
+    "Id": 214331,
+    "StyleName": "Size",
+    "StyleValue": "210ml"
+  },
+  {
+    "Id": 207920,
+    "StyleName": "Size",
+    "StyleValue": "21gm"
+  },
+  {
+    "Id": 82444,
+    "StyleName": "Size",
+    "StyleValue": "22"
+  },
+  {
+    "Id": 20901,
+    "StyleName": "Size",
+    "StyleValue": "22(2Yrs)"
+  },
+  {
+    "Id": 5865,
+    "StyleName": "Size",
+    "StyleValue": "22L"
+  },
+  {
+    "Id": 20187,
+    "StyleName": "Size",
+    "StyleValue": "22M"
+  },
+  {
+    "Id": 209790,
+    "StyleName": "Size",
+    "StyleValue": "22ml"
+  },
+  {
+    "Id": 58655,
+    "StyleName": "Size",
+    "StyleValue": "24"
+  },
+  {
+    "Id": 18216,
+    "StyleName": "Size",
+    "StyleValue": "24 Months"
+  },
+  {
+    "Id": 20902,
+    "StyleName": "Size",
+    "StyleValue": "24(4Yrs)"
+  },
+  {
+    "Id": 216044,
+    "StyleName": "Size",
+    "StyleValue": "24/30"
+  },
+  {
+    "Id": 42495,
+    "StyleName": "Size",
+    "StyleValue": "24M"
+  },
+  {
+    "Id": 214024,
+    "StyleName": "Size",
+    "StyleValue": "250G"
+  },
+  {
+    "Id": 214007,
+    "StyleName": "Size",
+    "StyleValue": "250ML"
+  },
+  {
+    "Id": 214026,
+    "StyleName": "Size",
+    "StyleValue": "250g"
+  },
+  {
+    "Id": 109830,
+    "StyleName": "Size",
+    "StyleValue": "250ml"
+  },
+  {
+    "Id": 207512,
+    "StyleName": "Size",
+    "StyleValue": "25GM"
+  },
+  {
+    "Id": 6379,
+    "StyleName": "Size",
+    "StyleValue": "25L"
+  },
+  {
+    "Id": 107304,
+    "StyleName": "Size",
+    "StyleValue": "25ML"
+  },
+  {
+    "Id": 107305,
+    "StyleName": "Size",
+    "StyleValue": "25ML/200ML"
+  },
+  {
+    "Id": 214867,
+    "StyleName": "Size",
+    "StyleValue": "25X25"
+  },
+  {
+    "Id": 207514,
+    "StyleName": "Size",
+    "StyleValue": "25gm"
+  },
+  {
+    "Id": 214067,
+    "StyleName": "Size",
+    "StyleValue": "25ml"
+  },
+  {
+    "Id": 82852,
+    "StyleName": "Size",
+    "StyleValue": "26"
+  },
+  {
+    "Id": 20903,
+    "StyleName": "Size",
+    "StyleValue": "26(6Yrs)"
+  },
+  {
+    "Id": 44924,
+    "StyleName": "Size",
+    "StyleValue": "26.0"
+  },
+  {
+    "Id": 216043,
+    "StyleName": "Size",
+    "StyleValue": "26/30"
+  },
+  {
+    "Id": 1898745,
+    "StyleName": "Size",
+    "StyleValue": "26/32"
+  },
+  {
+    "Id": 20189,
+    "StyleName": "Size",
+    "StyleValue": "26M"
+  },
+  {
+    "Id": 503641,
+    "StyleName": "Size",
+    "StyleValue": "27"
+  },
+  {
+    "Id": 1898746,
+    "StyleName": "Size",
+    "StyleValue": "27/32"
+  },
+  {
+    "Id": 207593,
+    "StyleName": "Size",
+    "StyleValue": "27ML"
+  },
+  {
+    "Id": 39961,
+    "StyleName": "Size",
+    "StyleValue": "28"
+  },
+  {
+    "Id": 20904,
+    "StyleName": "Size",
+    "StyleValue": "28(8Yrs)"
+  },
+  {
+    "Id": 1152650,
+    "StyleName": "Size",
+    "StyleValue": "28/30"
+  },
+  {
+    "Id": 2851820,
+    "StyleName": "Size",
+    "StyleValue": "28/32"
+  },
+  {
+    "Id": 20190,
+    "StyleName": "Size",
+    "StyleValue": "28M"
+  },
+  {
+    "Id": 503643,
+    "StyleName": "Size",
+    "StyleValue": "29"
+  },
+  {
+    "Id": 178791,
+    "StyleName": "Size",
+    "StyleValue": "29/32"
+  },
+  {
+    "Id": 222345,
+    "StyleName": "Size",
+    "StyleValue": "2GM"
+  },
+  {
+    "Id": 39045,
+    "StyleName": "Size",
+    "StyleValue": "2XL"
+  },
+  {
+    "Id": 39059,
+    "StyleName": "Size",
+    "StyleValue": "2Y"
+  },
+  {
+    "Id": 39001,
+    "StyleName": "Size",
+    "StyleValue": "2YRS"
+  },
+  {
+    "Id": 277412,
+    "StyleName": "Size",
+    "StyleValue": "2Year"
+  },
+  {
+    "Id": 129386,
+    "StyleName": "Size",
+    "StyleValue": "2Yrs"
+  },
+  {
+    "Id": 209801,
+    "StyleName": "Size",
+    "StyleValue": "2gm"
+  },
+  {
+    "Id": 207805,
+    "StyleName": "Size",
+    "StyleValue": "2ml"
+  },
+  {
+    "Id": 18217,
+    "StyleName": "Size",
+    "StyleValue": "3 Months"
+  },
+  {
+    "Id": 15882,
+    "StyleName": "Size",
+    "StyleValue": "3(8-10YRS)"
+  },
+  {
+    "Id": 219930,
+    "StyleName": "Size",
+    "StyleValue": "3*10ml"
+  },
+  {
+    "Id": 83103,
+    "StyleName": "Size",
+    "StyleValue": "3+YS"
+  },
+  {
+    "Id": 38810,
+    "StyleName": "Size",
+    "StyleValue": "3-3Y"
+  },
+  {
+    "Id": 14007,
+    "StyleName": "Size",
+    "StyleValue": "3-4 YEAR"
+  },
+  {
+    "Id": 42392,
+    "StyleName": "Size",
+    "StyleValue": "3-4Y"
+  },
+  {
+    "Id": 151223,
+    "StyleName": "Size",
+    "StyleValue": "3-4Yrs"
+  },
+  {
+    "Id": 81718,
+    "StyleName": "Size",
+    "StyleValue": "3-4y"
+  },
+  {
+    "Id": 79599,
+    "StyleName": "Size",
+    "StyleValue": "3-5Y"
+  },
+  {
+    "Id": 150971,
+    "StyleName": "Size",
+    "StyleValue": "3-6M"
+  },
+  {
+    "Id": 222126,
+    "StyleName": "Size",
+    "StyleValue": "3.2GM"
+  },
+  {
+    "Id": 207968,
+    "StyleName": "Size",
+    "StyleValue": "3.2gm"
+  },
+  {
+    "Id": 213878,
+    "StyleName": "Size",
+    "StyleValue": "3.4g"
+  },
+  {
+    "Id": 207934,
+    "StyleName": "Size",
+    "StyleValue": "3.4gm"
+  },
+  {
+    "Id": 222132,
+    "StyleName": "Size",
+    "StyleValue": "3.5GM"
+  },
+  {
+    "Id": 222074,
+    "StyleName": "Size",
+    "StyleValue": "3.5ML"
+  },
+  {
+    "Id": 222065,
+    "StyleName": "Size",
+    "StyleValue": "3.6ML"
+  },
+  {
+    "Id": 207417,
+    "StyleName": "Size",
+    "StyleValue": "3.6ml"
+  },
+  {
+    "Id": 207401,
+    "StyleName": "Size",
+    "StyleValue": "3.75ml"
+  },
+  {
+    "Id": 207826,
+    "StyleName": "Size",
+    "StyleValue": "3.7g"
+  },
+  {
+    "Id": 207827,
+    "StyleName": "Size",
+    "StyleValue": "3.7gm"
+  },
+  {
+    "Id": 208723,
+    "StyleName": "Size",
+    "StyleValue": "3.94GM"
+  },
+  {
+    "Id": 208722,
+    "StyleName": "Size",
+    "StyleValue": "3.94gm"
+  },
+  {
+    "Id": 145914,
+    "StyleName": "Size",
+    "StyleValue": "3/4Yrs"
+  },
+  {
+    "Id": 39941,
+    "StyleName": "Size",
+    "StyleValue": "30"
+  },
+  {
+    "Id": 20905,
+    "StyleName": "Size",
+    "StyleValue": "30(10Yrs)"
+  },
+  {
+    "Id": 178929,
+    "StyleName": "Size",
+    "StyleValue": "30+30+30ML"
+  },
+  {
+    "Id": 178788,
+    "StyleName": "Size",
+    "StyleValue": "30/30"
+  },
+  {
+    "Id": 178800,
+    "StyleName": "Size",
+    "StyleValue": "30/32"
+  },
+  {
+    "Id": 178794,
+    "StyleName": "Size",
+    "StyleValue": "30/34"
+  },
+  {
+    "Id": 132600,
+    "StyleName": "Size",
+    "StyleValue": "300ML"
+  },
+  {
+    "Id": 214091,
+    "StyleName": "Size",
+    "StyleValue": "300g"
+  },
+  {
+    "Id": 112246,
+    "StyleName": "Size",
+    "StyleValue": "300ml"
+  },
+  {
+    "Id": 124545,
+    "StyleName": "Size",
+    "StyleValue": "30B"
+  },
+  {
+    "Id": 6381,
+    "StyleName": "Size",
+    "StyleValue": "30L"
+  },
+  {
+    "Id": 20191,
+    "StyleName": "Size",
+    "StyleValue": "30M"
+  },
+  {
+    "Id": 100143,
+    "StyleName": "Size",
+    "StyleValue": "30ML"
+  },
+  {
+    "Id": 207713,
+    "StyleName": "Size",
+    "StyleValue": "30gm"
+  },
+  {
+    "Id": 146344,
+    "StyleName": "Size",
+    "StyleValue": "30inch"
+  },
+  {
+    "Id": 207493,
+    "StyleName": "Size",
+    "StyleValue": "30ml"
+  },
+  {
+    "Id": 86605,
+    "StyleName": "Size",
+    "StyleValue": "31"
+  },
+  {
+    "Id": 178789,
+    "StyleName": "Size",
+    "StyleValue": "31/32"
+  },
+  {
+    "Id": 120554,
+    "StyleName": "Size",
+    "StyleValue": "31/34"
+  },
+  {
+    "Id": 214832,
+    "StyleName": "Size",
+    "StyleValue": "31X29"
+  },
+  {
+    "Id": 39942,
+    "StyleName": "Size",
+    "StyleValue": "32"
+  },
+  {
+    "Id": 20906,
+    "StyleName": "Size",
+    "StyleValue": "32(12Yrs)"
+  },
+  {
+    "Id": 148636,
+    "StyleName": "Size",
+    "StyleValue": "32-34"
+  },
+  {
+    "Id": 178843,
+    "StyleName": "Size",
+    "StyleValue": "32/30"
+  },
+  {
+    "Id": 1152651,
+    "StyleName": "Size",
+    "StyleValue": "32/32"
+  },
+  {
+    "Id": 178793,
+    "StyleName": "Size",
+    "StyleValue": "32/34"
+  },
+  {
+    "Id": 8909417,
+    "StyleName": "Size",
+    "StyleValue": "32A"
+  },
+  {
+    "Id": 93521,
+    "StyleName": "Size",
+    "StyleValue": "32B"
+  },
+  {
+    "Id": 310168,
+    "StyleName": "Size",
+    "StyleValue": "32C"
+  },
+  {
+    "Id": 310734,
+    "StyleName": "Size",
+    "StyleValue": "32D"
+  },
+  {
+    "Id": 20192,
+    "StyleName": "Size",
+    "StyleValue": "32M"
+  },
+  {
+    "Id": 86505,
+    "StyleName": "Size",
+    "StyleValue": "33"
+  },
+  {
+    "Id": 178797,
+    "StyleName": "Size",
+    "StyleValue": "33/32"
+  },
+  {
+    "Id": 178792,
+    "StyleName": "Size",
+    "StyleValue": "33/34"
+  },
+  {
+    "Id": 39943,
+    "StyleName": "Size",
+    "StyleValue": "34"
+  },
+  {
+    "Id": 132686,
+    "StyleName": "Size",
+    "StyleValue": "34/30"
+  },
+  {
+    "Id": 178790,
+    "StyleName": "Size",
+    "StyleValue": "34/32"
+  },
+  {
+    "Id": 1153044,
+    "StyleName": "Size",
+    "StyleValue": "34/34"
+  },
+  {
+    "Id": 178844,
+    "StyleName": "Size",
+    "StyleValue": "34/36"
+  },
+  {
+    "Id": 8909418,
+    "StyleName": "Size",
+    "StyleValue": "34A"
+  },
+  {
+    "Id": 93520,
+    "StyleName": "Size",
+    "StyleValue": "34B"
+  },
+  {
+    "Id": 310174,
+    "StyleName": "Size",
+    "StyleValue": "34C"
+  },
+  {
+    "Id": 310296,
+    "StyleName": "Size",
+    "StyleValue": "34D"
+  },
+  {
+    "Id": 997030,
+    "StyleName": "Size",
+    "StyleValue": "34DD"
+  },
+  {
+    "Id": 740904,
+    "StyleName": "Size",
+    "StyleValue": "34Z"
+  },
+  {
+    "Id": 146343,
+    "StyleName": "Size",
+    "StyleValue": "34inch"
+  },
+  {
+    "Id": 69414,
+    "StyleName": "Size",
+    "StyleValue": "35"
+  },
+  {
+    "Id": 4838408,
+    "StyleName": "Size",
+    "StyleValue": "35/38"
+  },
+  {
+    "Id": 214098,
+    "StyleName": "Size",
+    "StyleValue": "350g"
+  },
+  {
+    "Id": 207497,
+    "StyleName": "Size",
+    "StyleValue": "35gm"
+  },
+  {
+    "Id": 214339,
+    "StyleName": "Size",
+    "StyleValue": "35ml"
+  },
+  {
+    "Id": 39944,
+    "StyleName": "Size",
+    "StyleValue": "36"
+  },
+  {
+    "Id": 148635,
+    "StyleName": "Size",
+    "StyleValue": "36-38"
+  },
+  {
+    "Id": 132687,
+    "StyleName": "Size",
+    "StyleValue": "36/30"
+  },
+  {
+    "Id": 178803,
+    "StyleName": "Size",
+    "StyleValue": "36/32"
+  },
+  {
+    "Id": 1152653,
+    "StyleName": "Size",
+    "StyleValue": "36/34"
+  },
+  {
+    "Id": 8909419,
+    "StyleName": "Size",
+    "StyleValue": "36A"
+  },
+  {
+    "Id": 93519,
+    "StyleName": "Size",
+    "StyleValue": "36B"
+  },
+  {
+    "Id": 310173,
+    "StyleName": "Size",
+    "StyleValue": "36C"
+  },
+  {
+    "Id": 310294,
+    "StyleName": "Size",
+    "StyleValue": "36D"
+  },
+  {
+    "Id": 997033,
+    "StyleName": "Size",
+    "StyleValue": "36DD"
+  },
+  {
+    "Id": 79588,
+    "StyleName": "Size",
+    "StyleValue": "36M"
+  },
+  {
+    "Id": 740905,
+    "StyleName": "Size",
+    "StyleValue": "36Z"
+  },
+  {
+    "Id": 51092,
+    "StyleName": "Size",
+    "StyleValue": "37"
+  },
+  {
+    "Id": 137506,
+    "StyleName": "Size",
+    "StyleValue": "37/40"
+  },
+  {
+    "Id": 39945,
+    "StyleName": "Size",
+    "StyleValue": "38"
+  },
+  {
+    "Id": 132685,
+    "StyleName": "Size",
+    "StyleValue": "38/30"
+  },
+  {
+    "Id": 1152654,
+    "StyleName": "Size",
+    "StyleValue": "38/34"
+  },
+  {
+    "Id": 8909420,
+    "StyleName": "Size",
+    "StyleValue": "38A"
+  },
+  {
+    "Id": 93518,
+    "StyleName": "Size",
+    "StyleValue": "38B"
+  },
+  {
+    "Id": 310293,
+    "StyleName": "Size",
+    "StyleValue": "38C"
+  },
+  {
+    "Id": 310292,
+    "StyleName": "Size",
+    "StyleValue": "38D"
+  },
+  {
+    "Id": 997037,
+    "StyleName": "Size",
+    "StyleValue": "38DD"
+  },
+  {
+    "Id": 740906,
+    "StyleName": "Size",
+    "StyleValue": "38Z"
+  },
+  {
+    "Id": 146342,
+    "StyleName": "Size",
+    "StyleValue": "38inch"
+  },
+  {
+    "Id": 39854,
+    "StyleName": "Size",
+    "StyleValue": "39"
+  },
+  {
+    "Id": 4838407,
+    "StyleName": "Size",
+    "StyleValue": "39/42"
+  },
+  {
+    "Id": 222097,
+    "StyleName": "Size",
+    "StyleValue": "3GM"
+  },
+  {
+    "Id": 39212,
+    "StyleName": "Size",
+    "StyleValue": "3M"
+  },
+  {
+    "Id": 222331,
+    "StyleName": "Size",
+    "StyleValue": "3ML"
+  },
+  {
+    "Id": 129384,
+    "StyleName": "Size",
+    "StyleValue": "3Y"
+  },
+  {
+    "Id": 129385,
+    "StyleName": "Size",
+    "StyleValue": "3Yrs"
+  },
+  {
+    "Id": 208890,
+    "StyleName": "Size",
+    "StyleValue": "3gm"
+  },
+  {
+    "Id": 103673,
+    "StyleName": "Size",
+    "StyleValue": "4"
+  },
+  {
+    "Id": 42354,
+    "StyleName": "Size",
+    "StyleValue": "4 Year"
+  },
+  {
+    "Id": 18148,
+    "StyleName": "Size",
+    "StyleValue": "4 Yrs"
+  },
+  {
+    "Id": 214044,
+    "StyleName": "Size",
+    "StyleValue": "4 g"
+  },
+  {
+    "Id": 15883,
+    "StyleName": "Size",
+    "StyleValue": "4(11-13YRS)"
+  },
+  {
+    "Id": 83108,
+    "StyleName": "Size",
+    "StyleValue": "4+YS"
+  },
+  {
+    "Id": 19233,
+    "StyleName": "Size",
+    "StyleValue": "4-4Y"
+  },
+  {
+    "Id": 42391,
+    "StyleName": "Size",
+    "StyleValue": "4-5Y"
+  },
+  {
+    "Id": 81719,
+    "StyleName": "Size",
+    "StyleValue": "4-5y"
+  },
+  {
+    "Id": 207856,
+    "StyleName": "Size",
+    "StyleValue": "4.2GM"
+  },
+  {
+    "Id": 207852,
+    "StyleName": "Size",
+    "StyleValue": "4.2g"
+  },
+  {
+    "Id": 207853,
+    "StyleName": "Size",
+    "StyleValue": "4.2gm"
+  },
+  {
+    "Id": 207441,
+    "StyleName": "Size",
+    "StyleValue": "4.4ml"
+  },
+  {
+    "Id": 222332,
+    "StyleName": "Size",
+    "StyleValue": "4.5GM"
+  },
+  {
+    "Id": 222071,
+    "StyleName": "Size",
+    "StyleValue": "4.5ML"
+  },
+  {
+    "Id": 214034,
+    "StyleName": "Size",
+    "StyleValue": "4.5g"
+  },
+  {
+    "Id": 208816,
+    "StyleName": "Size",
+    "StyleValue": "4.5mlX2"
+  },
+  {
+    "Id": 73379,
+    "StyleName": "Size",
+    "StyleValue": "4/5"
+  },
+  {
+    "Id": 145913,
+    "StyleName": "Size",
+    "StyleValue": "4/5Yrs"
+  },
+  {
+    "Id": 39853,
+    "StyleName": "Size",
+    "StyleValue": "40"
+  },
+  {
+    "Id": 148634,
+    "StyleName": "Size",
+    "StyleValue": "40-42"
+  },
+  {
+    "Id": 132684,
+    "StyleName": "Size",
+    "StyleValue": "40/30"
+  },
+  {
+    "Id": 3431585,
+    "StyleName": "Size",
+    "StyleValue": "40B"
+  },
+  {
+    "Id": 3431586,
+    "StyleName": "Size",
+    "StyleValue": "40C"
+  },
+  {
+    "Id": 179125,
+    "StyleName": "Size",
+    "StyleValue": "40D"
+  },
+  {
+    "Id": 997225,
+    "StyleName": "Size",
+    "StyleValue": "40DD"
+  },
+  {
+    "Id": 222063,
+    "StyleName": "Size",
+    "StyleValue": "40GM"
+  },
+  {
+    "Id": 183899,
+    "StyleName": "Size",
+    "StyleValue": "40ML"
+  },
+  {
+    "Id": 740907,
+    "StyleName": "Size",
+    "StyleValue": "40Z"
+  },
+  {
+    "Id": 691705,
+    "StyleName": "Size",
+    "StyleValue": "40g"
+  },
+  {
+    "Id": 207714,
+    "StyleName": "Size",
+    "StyleValue": "40gm"
+  },
+  {
+    "Id": 207915,
+    "StyleName": "Size",
+    "StyleValue": "40ml"
+  },
+  {
+    "Id": 163623,
+    "StyleName": "Size",
+    "StyleValue": "40x40cm"
+  },
+  {
+    "Id": 222328,
+    "StyleName": "Size",
+    "StyleValue": "41GM"
+  },
+  {
+    "Id": 39852,
+    "StyleName": "Size",
+    "StyleValue": "42"
+  },
+  {
+    "Id": 132683,
+    "StyleName": "Size",
+    "StyleValue": "42/30"
+  },
+  {
+    "Id": 997041,
+    "StyleName": "Size",
+    "StyleValue": "42B"
+  },
+  {
+    "Id": 997042,
+    "StyleName": "Size",
+    "StyleValue": "42C"
+  },
+  {
+    "Id": 2160492,
+    "StyleName": "Size",
+    "StyleValue": "42D"
+  },
+  {
+    "Id": 2160493,
+    "StyleName": "Size",
+    "StyleValue": "42DD"
+  },
+  {
+    "Id": 740911,
+    "StyleName": "Size",
+    "StyleValue": "42Z"
+  },
+  {
+    "Id": 39855,
+    "StyleName": "Size",
+    "StyleValue": "44"
+  },
+  {
+    "Id": 112244,
+    "StyleName": "Size",
+    "StyleValue": "450ml"
+  },
+  {
+    "Id": 183921,
+    "StyleName": "Size",
+    "StyleValue": "45ML"
+  },
+  {
+    "Id": 207923,
+    "StyleName": "Size",
+    "StyleValue": "45ml"
+  },
+  {
+    "Id": 57730,
+    "StyleName": "Size",
+    "StyleValue": "46"
+  },
+  {
+    "Id": 57709,
+    "StyleName": "Size",
+    "StyleValue": "46.0"
+  },
+  {
+    "Id": 57729,
+    "StyleName": "Size",
+    "StyleValue": "48"
+  },
+  {
+    "Id": 44923,
+    "StyleName": "Size",
+    "StyleValue": "48.0"
+  },
+  {
+    "Id": 222061,
+    "StyleName": "Size",
+    "StyleValue": "4GM"
+  },
+  {
+    "Id": 42500,
+    "StyleName": "Size",
+    "StyleValue": "4M"
+  },
+  {
+    "Id": 208721,
+    "StyleName": "Size",
+    "StyleValue": "4MLX2"
+  },
+  {
+    "Id": 39060,
+    "StyleName": "Size",
+    "StyleValue": "4Y"
+  },
+  {
+    "Id": 39000,
+    "StyleName": "Size",
+    "StyleValue": "4YRS"
+  },
+  {
+    "Id": 277413,
+    "StyleName": "Size",
+    "StyleValue": "4Year"
+  },
+  {
+    "Id": 113882,
+    "StyleName": "Size",
+    "StyleValue": "4Yrs"
+  },
+  {
+    "Id": 214042,
+    "StyleName": "Size",
+    "StyleValue": "4g"
+  },
+  {
+    "Id": 207840,
+    "StyleName": "Size",
+    "StyleValue": "4gm"
+  },
+  {
+    "Id": 207803,
+    "StyleName": "Size",
+    "StyleValue": "4ml"
+  },
+  {
+    "Id": 103672,
+    "StyleName": "Size",
+    "StyleValue": "5"
+  },
+  {
+    "Id": 214053,
+    "StyleName": "Size",
+    "StyleValue": "5 ml"
+  },
+  {
+    "Id": 83107,
+    "StyleName": "Size",
+    "StyleValue": "5+YS"
+  },
+  {
+    "Id": 42390,
+    "StyleName": "Size",
+    "StyleValue": "5-6Y"
+  },
+  {
+    "Id": 145964,
+    "StyleName": "Size",
+    "StyleValue": "5-6YRS"
+  },
+  {
+    "Id": 151222,
+    "StyleName": "Size",
+    "StyleValue": "5-6Yrs"
+  },
+  {
+    "Id": 81720,
+    "StyleName": "Size",
+    "StyleValue": "5-6y"
+  },
+  {
+    "Id": 57565,
+    "StyleName": "Size",
+    "StyleValue": "5-7Y"
+  },
+  {
+    "Id": 207977,
+    "StyleName": "Size",
+    "StyleValue": "5.1gm"
+  },
+  {
+    "Id": 207931,
+    "StyleName": "Size",
+    "StyleValue": "5.67gm"
+  },
+  {
+    "Id": 214130,
+    "StyleName": "Size",
+    "StyleValue": "5.8g"
+  },
+  {
+    "Id": 207883,
+    "StyleName": "Size",
+    "StyleValue": "5.9ml"
+  },
+  {
+    "Id": 188113,
+    "StyleName": "Size",
+    "StyleValue": "5/6"
+  },
+  {
+    "Id": 146265,
+    "StyleName": "Size",
+    "StyleValue": "5/6Yrs"
+  },
+  {
+    "Id": 145880,
+    "StyleName": "Size",
+    "StyleValue": "5/6yrs"
+  },
+  {
+    "Id": 57728,
+    "StyleName": "Size",
+    "StyleValue": "50"
+  },
+  {
+    "Id": 219989,
+    "StyleName": "Size",
+    "StyleValue": "50 g"
+  },
+  {
+    "Id": 44922,
+    "StyleName": "Size",
+    "StyleValue": "50.0"
+  },
+  {
+    "Id": 207494,
+    "StyleName": "Size",
+    "StyleValue": "50G"
+  },
+  {
+    "Id": 207485,
+    "StyleName": "Size",
+    "StyleValue": "50GM"
+  },
+  {
+    "Id": 5030,
+    "StyleName": "Size",
+    "StyleValue": "50LTRS"
+  },
+  {
+    "Id": 82868,
+    "StyleName": "Size",
+    "StyleValue": "50ML"
+  },
+  {
+    "Id": 213937,
+    "StyleName": "Size",
+    "StyleValue": "50g"
+  },
+  {
+    "Id": 207479,
+    "StyleName": "Size",
+    "StyleValue": "50gm"
+  },
+  {
+    "Id": 207250,
+    "StyleName": "Size",
+    "StyleValue": "50ml"
+  },
+  {
+    "Id": 57727,
+    "StyleName": "Size",
+    "StyleValue": "52"
+  },
+  {
+    "Id": 44921,
+    "StyleName": "Size",
+    "StyleValue": "52.0"
+  },
+  {
+    "Id": 57726,
+    "StyleName": "Size",
+    "StyleValue": "54"
+  },
+  {
+    "Id": 44920,
+    "StyleName": "Size",
+    "StyleValue": "54.0"
+  },
+  {
+    "Id": 33834,
+    "StyleName": "Size",
+    "StyleValue": "55"
+  },
+  {
+    "Id": 184672,
+    "StyleName": "Size",
+    "StyleValue": "55ML"
+  },
+  {
+    "Id": 214330,
+    "StyleName": "Size",
+    "StyleValue": "55g"
+  },
+  {
+    "Id": 214333,
+    "StyleName": "Size",
+    "StyleValue": "55gm"
+  },
+  {
+    "Id": 33879,
+    "StyleName": "Size",
+    "StyleValue": "57"
+  },
+  {
+    "Id": 117340,
+    "StyleName": "Size",
+    "StyleValue": "58"
+  },
+  {
+    "Id": 160925,
+    "StyleName": "Size",
+    "StyleValue": "59"
+  },
+  {
+    "Id": 214062,
+    "StyleName": "Size",
+    "StyleValue": "5g"
+  },
+  {
+    "Id": 208908,
+    "StyleName": "Size",
+    "StyleValue": "5gm"
+  },
+  {
+    "Id": 214041,
+    "StyleName": "Size",
+    "StyleValue": "5ml"
+  },
+  {
+    "Id": 103671,
+    "StyleName": "Size",
+    "StyleValue": "6"
+  },
+  {
+    "Id": 18218,
+    "StyleName": "Size",
+    "StyleValue": "6 Months"
+  },
+  {
+    "Id": 42353,
+    "StyleName": "Size",
+    "StyleValue": "6 Year"
+  },
+  {
+    "Id": 18149,
+    "StyleName": "Size",
+    "StyleValue": "6 Yrs"
+  },
+  {
+    "Id": 83102,
+    "StyleName": "Size",
+    "StyleValue": "6+YS"
+  },
+  {
+    "Id": 42389,
+    "StyleName": "Size",
+    "StyleValue": "6-7Y"
+  },
+  {
+    "Id": 145963,
+    "StyleName": "Size",
+    "StyleValue": "6-7YRS"
+  },
+  {
+    "Id": 152945,
+    "StyleName": "Size",
+    "StyleValue": "6-7Yrs"
+  },
+  {
+    "Id": 81721,
+    "StyleName": "Size",
+    "StyleValue": "6-7y"
+  },
+  {
+    "Id": 150970,
+    "StyleName": "Size",
+    "StyleValue": "6-9M"
+  },
+  {
+    "Id": 73792,
+    "StyleName": "Size",
+    "StyleValue": "6.5C"
+  },
+  {
+    "Id": 73380,
+    "StyleName": "Size",
+    "StyleValue": "6/7"
+  },
+  {
+    "Id": 146264,
+    "StyleName": "Size",
+    "StyleValue": "6/7Yrs"
+  },
+  {
+    "Id": 145879,
+    "StyleName": "Size",
+    "StyleValue": "6/7yrs"
+  },
+  {
+    "Id": 33894,
+    "StyleName": "Size",
+    "StyleValue": "60"
+  },
+  {
+    "Id": 214100,
+    "StyleName": "Size",
+    "StyleValue": "60G"
+  },
+  {
+    "Id": 5031,
+    "StyleName": "Size",
+    "StyleValue": "60LTRS"
+  },
+  {
+    "Id": 175257,
+    "StyleName": "Size",
+    "StyleValue": "60ML"
+  },
+  {
+    "Id": 100558,
+    "StyleName": "Size",
+    "StyleValue": "60MM"
+  },
+  {
+    "Id": 213938,
+    "StyleName": "Size",
+    "StyleValue": "60g"
+  },
+  {
+    "Id": 214353,
+    "StyleName": "Size",
+    "StyleValue": "60gm"
+  },
+  {
+    "Id": 207594,
+    "StyleName": "Size",
+    "StyleValue": "60ml"
+  },
+  {
+    "Id": 33898,
+    "StyleName": "Size",
+    "StyleValue": "62"
+  },
+  {
+    "Id": 100527,
+    "StyleName": "Size",
+    "StyleValue": "62MM"
+  },
+  {
+    "Id": 117328,
+    "StyleName": "Size",
+    "StyleValue": "65"
+  },
+  {
+    "Id": 148829,
+    "StyleName": "Size",
+    "StyleValue": "65ML"
+  },
+  {
+    "Id": 134070,
+    "StyleName": "Size",
+    "StyleValue": "66"
+  },
+  {
+    "Id": 134079,
+    "StyleName": "Size",
+    "StyleValue": "66.0"
+  },
+  {
+    "Id": 209474,
+    "StyleName": "Size",
+    "StyleValue": "67ml"
+  },
+  {
+    "Id": 117329,
+    "StyleName": "Size",
+    "StyleValue": "68"
+  },
+  {
+    "Id": 214113,
+    "StyleName": "Size",
+    "StyleValue": "6G"
+  },
+  {
+    "Id": 222336,
+    "StyleName": "Size",
+    "StyleValue": "6GM"
+  },
+  {
+    "Id": 39213,
+    "StyleName": "Size",
+    "StyleValue": "6M"
+  },
+  {
+    "Id": 228076,
+    "StyleName": "Size",
+    "StyleValue": "6X1.5ml"
+  },
+  {
+    "Id": 39061,
+    "StyleName": "Size",
+    "StyleValue": "6Y"
+  },
+  {
+    "Id": 38999,
+    "StyleName": "Size",
+    "StyleValue": "6YRS"
+  },
+  {
+    "Id": 277414,
+    "StyleName": "Size",
+    "StyleValue": "6Year"
+  },
+  {
+    "Id": 129428,
+    "StyleName": "Size",
+    "StyleValue": "6Yrs"
+  },
+  {
+    "Id": 214112,
+    "StyleName": "Size",
+    "StyleValue": "6g"
+  },
+  {
+    "Id": 208874,
+    "StyleName": "Size",
+    "StyleValue": "6gm"
+  },
+  {
+    "Id": 207468,
+    "StyleName": "Size",
+    "StyleValue": "6ml"
+  },
+  {
+    "Id": 7942,
+    "StyleName": "Size",
+    "StyleValue": "7"
+  },
+  {
+    "Id": 83110,
+    "StyleName": "Size",
+    "StyleValue": "7+YS"
+  },
+  {
+    "Id": 42388,
+    "StyleName": "Size",
+    "StyleValue": "7-8Y"
+  },
+  {
+    "Id": 145962,
+    "StyleName": "Size",
+    "StyleValue": "7-8YRS"
+  },
+  {
+    "Id": 151221,
+    "StyleName": "Size",
+    "StyleValue": "7-8Yrs"
+  },
+  {
+    "Id": 207970,
+    "StyleName": "Size",
+    "StyleValue": "7.1gm"
+  },
+  {
+    "Id": 127729,
+    "StyleName": "Size",
+    "StyleValue": "7.5"
+  },
+  {
+    "Id": 73783,
+    "StyleName": "Size",
+    "StyleValue": "7.5C"
+  },
+  {
+    "Id": 189668,
+    "StyleName": "Size",
+    "StyleValue": "7.5ML"
+  },
+  {
+    "Id": 209751,
+    "StyleName": "Size",
+    "StyleValue": "7.9ml"
+  },
+  {
+    "Id": 188111,
+    "StyleName": "Size",
+    "StyleValue": "7/8"
+  },
+  {
+    "Id": 146263,
+    "StyleName": "Size",
+    "StyleValue": "7/8Yrs"
+  },
+  {
+    "Id": 145878,
+    "StyleName": "Size",
+    "StyleValue": "7/8yrs"
+  },
+  {
+    "Id": 194681,
+    "StyleName": "Size",
+    "StyleValue": "70"
+  },
+  {
+    "Id": 183926,
+    "StyleName": "Size",
+    "StyleValue": "70ML"
+  },
+  {
+    "Id": 137339,
+    "StyleName": "Size",
+    "StyleValue": "70cm"
+  },
+  {
+    "Id": 134069,
+    "StyleName": "Size",
+    "StyleValue": "72"
+  },
+  {
+    "Id": 134078,
+    "StyleName": "Size",
+    "StyleValue": "72.0"
+  },
+  {
+    "Id": 105803,
+    "StyleName": "Size",
+    "StyleValue": "74"
+  },
+  {
+    "Id": 207979,
+    "StyleName": "Size",
+    "StyleValue": "75GM"
+  },
+  {
+    "Id": 82882,
+    "StyleName": "Size",
+    "StyleValue": "75ML"
+  },
+  {
+    "Id": 100159,
+    "StyleName": "Size",
+    "StyleValue": "75ML-200ML"
+  },
+  {
+    "Id": 137337,
+    "StyleName": "Size",
+    "StyleValue": "75cm"
+  },
+  {
+    "Id": 209464,
+    "StyleName": "Size",
+    "StyleValue": "75gm"
+  },
+  {
+    "Id": 112098,
+    "StyleName": "Size",
+    "StyleValue": "75ml"
+  },
+  {
+    "Id": 134068,
+    "StyleName": "Size",
+    "StyleValue": "76"
+  },
+  {
+    "Id": 207469,
+    "StyleName": "Size",
+    "StyleValue": "7ML"
+  },
+  {
+    "Id": 432800,
+    "StyleName": "Size",
+    "StyleValue": "7Y"
+  },
+  {
+    "Id": 141349,
+    "StyleName": "Size",
+    "StyleValue": "7Yrs"
+  },
+  {
+    "Id": 213960,
+    "StyleName": "Size",
+    "StyleValue": "7ml"
+  },
+  {
+    "Id": 72359,
+    "StyleName": "Size",
+    "StyleValue": "8"
+  },
+  {
+    "Id": 42352,
+    "StyleName": "Size",
+    "StyleValue": "8 Year"
+  },
+  {
+    "Id": 18150,
+    "StyleName": "Size",
+    "StyleValue": "8 Yrs"
+  },
+  {
+    "Id": 83109,
+    "StyleName": "Size",
+    "StyleValue": "8+YS"
+  },
+  {
+    "Id": 57564,
+    "StyleName": "Size",
+    "StyleValue": "8-10Y"
+  },
+  {
+    "Id": 42433,
+    "StyleName": "Size",
+    "StyleValue": "8-9 Year"
+  },
+  {
+    "Id": 42425,
+    "StyleName": "Size",
+    "StyleValue": "8-9Y"
+  },
+  {
+    "Id": 127728,
+    "StyleName": "Size",
+    "StyleValue": "8.5"
+  },
+  {
+    "Id": 189650,
+    "StyleName": "Size",
+    "StyleValue": "8.5ML"
+  },
+  {
+    "Id": 73381,
+    "StyleName": "Size",
+    "StyleValue": "8/9"
+  },
+  {
+    "Id": 113517,
+    "StyleName": "Size",
+    "StyleValue": "80"
+  },
+  {
+    "Id": 214095,
+    "StyleName": "Size",
+    "StyleValue": "80G"
+  },
+  {
+    "Id": 148816,
+    "StyleName": "Size",
+    "StyleValue": "80ML"
+  },
+  {
+    "Id": 137328,
+    "StyleName": "Size",
+    "StyleValue": "80cm"
+  },
+  {
+    "Id": 213957,
+    "StyleName": "Size",
+    "StyleValue": "80g"
+  },
+  {
+    "Id": 207912,
+    "StyleName": "Size",
+    "StyleValue": "80gm"
+  },
+  {
+    "Id": 213944,
+    "StyleName": "Size",
+    "StyleValue": "80ml"
+  },
+  {
+    "Id": 105802,
+    "StyleName": "Size",
+    "StyleValue": "82"
+  },
+  {
+    "Id": 73005,
+    "StyleName": "Size",
+    "StyleValue": "85"
+  },
+  {
+    "Id": 188818,
+    "StyleName": "Size",
+    "StyleValue": "85CM"
+  },
+  {
+    "Id": 183918,
+    "StyleName": "Size",
+    "StyleValue": "85ML"
+  },
+  {
+    "Id": 137325,
+    "StyleName": "Size",
+    "StyleValue": "85cm"
+  },
+  {
+    "Id": 214352,
+    "StyleName": "Size",
+    "StyleValue": "85g"
+  },
+  {
+    "Id": 214346,
+    "StyleName": "Size",
+    "StyleValue": "85gm"
+  },
+  {
+    "Id": 134066,
+    "StyleName": "Size",
+    "StyleValue": "86"
+  },
+  {
+    "Id": 222113,
+    "StyleName": "Size",
+    "StyleValue": "8GM"
+  },
+  {
+    "Id": 155459,
+    "StyleName": "Size",
+    "StyleValue": "8M"
+  },
+  {
+    "Id": 207467,
+    "StyleName": "Size",
+    "StyleValue": "8ML"
+  },
+  {
+    "Id": 39062,
+    "StyleName": "Size",
+    "StyleValue": "8Y"
+  },
+  {
+    "Id": 38998,
+    "StyleName": "Size",
+    "StyleValue": "8YRS"
+  },
+  {
+    "Id": 277415,
+    "StyleName": "Size",
+    "StyleValue": "8Year"
+  },
+  {
+    "Id": 129427,
+    "StyleName": "Size",
+    "StyleValue": "8Yrs"
+  },
+  {
+    "Id": 209781,
+    "StyleName": "Size",
+    "StyleValue": "8gm"
+  },
+  {
+    "Id": 207757,
+    "StyleName": "Size",
+    "StyleValue": "8ml"
+  },
+  {
+    "Id": 18219,
+    "StyleName": "Size",
+    "StyleValue": "9 Months"
+  },
+  {
+    "Id": 83101,
+    "StyleName": "Size",
+    "StyleValue": "9+YS"
+  },
+  {
+    "Id": 42432,
+    "StyleName": "Size",
+    "StyleValue": "9-10 Year"
+  },
+  {
+    "Id": 42424,
+    "StyleName": "Size",
+    "StyleValue": "9-10Y"
+  },
+  {
+    "Id": 145961,
+    "StyleName": "Size",
+    "StyleValue": "9-10YRS"
+  },
+  {
+    "Id": 152943,
+    "StyleName": "Size",
+    "StyleValue": "9-10Yrs"
+  },
+  {
+    "Id": 150969,
+    "StyleName": "Size",
+    "StyleValue": "9-12M"
+  },
+  {
+    "Id": 130671,
+    "StyleName": "Size",
+    "StyleValue": "9.5"
+  },
+  {
+    "Id": 209816,
+    "StyleName": "Size",
+    "StyleValue": "9.5gm"
+  },
+  {
+    "Id": 188110,
+    "StyleName": "Size",
+    "StyleValue": "9/10"
+  },
+  {
+    "Id": 146262,
+    "StyleName": "Size",
+    "StyleValue": "9/10Yrs"
+  },
+  {
+    "Id": 145877,
+    "StyleName": "Size",
+    "StyleValue": "9/10yrs"
+  },
+  {
+    "Id": 73004,
+    "StyleName": "Size",
+    "StyleValue": "90"
+  },
+  {
+    "Id": 100065,
+    "StyleName": "Size",
+    "StyleValue": "90ML"
+  },
+  {
+    "Id": 137324,
+    "StyleName": "Size",
+    "StyleValue": "90cm"
+  },
+  {
+    "Id": 209454,
+    "StyleName": "Size",
+    "StyleValue": "90ml"
+  },
+  {
+    "Id": 207725,
+    "StyleName": "Size",
+    "StyleValue": "91.8ml"
+  },
+  {
+    "Id": 134065,
+    "StyleName": "Size",
+    "StyleValue": "92"
+  },
+  {
+    "Id": 73003,
+    "StyleName": "Size",
+    "StyleValue": "95"
+  },
+  {
+    "Id": 188819,
+    "StyleName": "Size",
+    "StyleValue": "95CM"
+  },
+  {
+    "Id": 137323,
+    "StyleName": "Size",
+    "StyleValue": "95cm"
+  },
+  {
+    "Id": 122144,
+    "StyleName": "Size",
+    "StyleValue": "96ML"
+  },
+  {
+    "Id": 222119,
+    "StyleName": "Size",
+    "StyleValue": "9GM"
+  },
+  {
+    "Id": 39214,
+    "StyleName": "Size",
+    "StyleValue": "9M"
+  },
+  {
+    "Id": 207517,
+    "StyleName": "Size",
+    "StyleValue": "9ML"
+  },
+  {
+    "Id": 207516,
+    "StyleName": "Size",
+    "StyleValue": "9MLL"
+  },
+  {
+    "Id": 208946,
+    "StyleName": "Size",
+    "StyleValue": "9gm"
+  },
+  {
+    "Id": 207534,
+    "StyleName": "Size",
+    "StyleValue": "9ml"
+  },
+  {
+    "Id": 6921709,
+    "StyleName": "Size",
+    "StyleValue": "A"
+  },
+  {
+    "Id": 4954,
+    "StyleName": "Size",
+    "StyleValue": "ADULT"
+  },
+  {
+    "Id": 6917470,
+    "StyleName": "Size",
+    "StyleValue": "B"
+  },
+  {
+    "Id": 6917471,
+    "StyleName": "Size",
+    "StyleValue": "C"
+  },
+  {
+    "Id": 24212,
+    "StyleName": "Size",
+    "StyleValue": "C/8-9"
+  },
+  {
+    "Id": 55360,
+    "StyleName": "Size",
+    "StyleValue": "C10"
+  },
+  {
+    "Id": 74908,
+    "StyleName": "Size",
+    "StyleValue": "C10/11"
+  },
+  {
+    "Id": 55359,
+    "StyleName": "Size",
+    "StyleValue": "C11"
+  },
+  {
+    "Id": 55358,
+    "StyleName": "Size",
+    "StyleValue": "C12"
+  },
+  {
+    "Id": 74907,
+    "StyleName": "Size",
+    "StyleValue": "C12/13"
+  },
+  {
+    "Id": 55357,
+    "StyleName": "Size",
+    "StyleValue": "C13"
+  },
+  {
+    "Id": 34032,
+    "StyleName": "Size",
+    "StyleValue": "C2"
+  },
+  {
+    "Id": 34033,
+    "StyleName": "Size",
+    "StyleValue": "C3"
+  },
+  {
+    "Id": 13721,
+    "StyleName": "Size",
+    "StyleValue": "C4"
+  },
+  {
+    "Id": 74906,
+    "StyleName": "Size",
+    "StyleValue": "C4/5"
+  },
+  {
+    "Id": 13722,
+    "StyleName": "Size",
+    "StyleValue": "C6"
+  },
+  {
+    "Id": 763711,
+    "StyleName": "Size",
+    "StyleValue": "C6/7"
+  },
+  {
+    "Id": 24213,
+    "StyleName": "Size",
+    "StyleValue": "C8-9"
+  },
+  {
+    "Id": 74861,
+    "StyleName": "Size",
+    "StyleValue": "C8/9"
+  },
+  {
+    "Id": 55361,
+    "StyleName": "Size",
+    "StyleValue": "C9"
+  },
+  {
+    "Id": 6917472,
+    "StyleName": "Size",
+    "StyleValue": "D"
+  },
+  {
+    "Id": 6917473,
+    "StyleName": "Size",
+    "StyleValue": "E"
+  },
+  {
+    "Id": 684756,
+    "StyleName": "Size",
+    "StyleValue": "EES"
+  },
+  {
+    "Id": 200149,
+    "StyleName": "Size",
+    "StyleValue": "EL"
+  },
+  {
+    "Id": 214245,
+    "StyleName": "Size",
+    "StyleValue": "EL/XXL"
+  },
+  {
+    "Id": 150777,
+    "StyleName": "Size",
+    "StyleValue": "ES"
+  },
+  {
+    "Id": 243283,
+    "StyleName": "Size",
+    "StyleValue": "EURO22"
+  },
+  {
+    "Id": 73431,
+    "StyleName": "Size",
+    "StyleValue": "EURO22/23"
+  },
+  {
+    "Id": 243282,
+    "StyleName": "Size",
+    "StyleValue": "EURO23"
+  },
+  {
+    "Id": 243306,
+    "StyleName": "Size",
+    "StyleValue": "EURO24"
+  },
+  {
+    "Id": 73432,
+    "StyleName": "Size",
+    "StyleValue": "EURO24/25"
+  },
+  {
+    "Id": 243305,
+    "StyleName": "Size",
+    "StyleValue": "EURO25"
+  },
+  {
+    "Id": 184293,
+    "StyleName": "Size",
+    "StyleValue": "EURO25.5"
+  },
+  {
+    "Id": 243562,
+    "StyleName": "Size",
+    "StyleValue": "EURO26"
+  },
+  {
+    "Id": 73433,
+    "StyleName": "Size",
+    "StyleValue": "EURO26/27"
+  },
+  {
+    "Id": 243563,
+    "StyleName": "Size",
+    "StyleValue": "EURO27"
+  },
+  {
+    "Id": 243588,
+    "StyleName": "Size",
+    "StyleValue": "EURO28"
+  },
+  {
+    "Id": 73434,
+    "StyleName": "Size",
+    "StyleValue": "EURO28/29"
+  },
+  {
+    "Id": 243589,
+    "StyleName": "Size",
+    "StyleValue": "EURO29"
+  },
+  {
+    "Id": 184290,
+    "StyleName": "Size",
+    "StyleValue": "EURO29.5"
+  },
+  {
+    "Id": 243590,
+    "StyleName": "Size",
+    "StyleValue": "EURO30"
+  },
+  {
+    "Id": 76150,
+    "StyleName": "Size",
+    "StyleValue": "EURO30/31"
+  },
+  {
+    "Id": 243591,
+    "StyleName": "Size",
+    "StyleValue": "EURO31"
+  },
+  {
+    "Id": 243592,
+    "StyleName": "Size",
+    "StyleValue": "EURO32"
+  },
+  {
+    "Id": 243593,
+    "StyleName": "Size",
+    "StyleValue": "EURO33"
+  },
+  {
+    "Id": 243586,
+    "StyleName": "Size",
+    "StyleValue": "EURO34"
+  },
+  {
+    "Id": 184317,
+    "StyleName": "Size",
+    "StyleValue": "EURO34.5"
+  },
+  {
+    "Id": 243587,
+    "StyleName": "Size",
+    "StyleValue": "EURO35"
+  },
+  {
+    "Id": 184316,
+    "StyleName": "Size",
+    "StyleValue": "EURO35.5"
+  },
+  {
+    "Id": 62831,
+    "StyleName": "Size",
+    "StyleValue": "EURO36"
+  },
+  {
+    "Id": 69642,
+    "StyleName": "Size",
+    "StyleValue": "EURO37"
+  },
+  {
+    "Id": 50272,
+    "StyleName": "Size",
+    "StyleValue": "EURO38"
+  },
+  {
+    "Id": 39766,
+    "StyleName": "Size",
+    "StyleValue": "EURO39"
+  },
+  {
+    "Id": 39765,
+    "StyleName": "Size",
+    "StyleValue": "EURO40"
+  },
+  {
+    "Id": 39764,
+    "StyleName": "Size",
+    "StyleValue": "EURO41"
+  },
+  {
+    "Id": 39763,
+    "StyleName": "Size",
+    "StyleValue": "EURO42"
+  },
+  {
+    "Id": 20011,
+    "StyleName": "Size",
+    "StyleValue": "EURO42.5"
+  },
+  {
+    "Id": 39762,
+    "StyleName": "Size",
+    "StyleValue": "EURO43"
+  },
+  {
+    "Id": 20013,
+    "StyleName": "Size",
+    "StyleValue": "EURO43.5"
+  },
+  {
+    "Id": 39761,
+    "StyleName": "Size",
+    "StyleValue": "EURO44"
+  },
+  {
+    "Id": 20015,
+    "StyleName": "Size",
+    "StyleValue": "EURO44.5"
+  },
+  {
+    "Id": 71019,
+    "StyleName": "Size",
+    "StyleValue": "EURO45"
+  },
+  {
+    "Id": 19790,
+    "StyleName": "Size",
+    "StyleValue": "EURO45.5"
+  },
+  {
+    "Id": 147485,
+    "StyleName": "Size",
+    "StyleValue": "EURO46"
+  },
+  {
+    "Id": 5056,
+    "StyleName": "Size",
+    "StyleValue": "EURO47"
+  },
+  {
+    "Id": 19734,
+    "StyleName": "Size",
+    "StyleValue": "EURO48"
+  },
+  {
+    "Id": 684755,
+    "StyleName": "Size",
+    "StyleValue": "EXS"
+  },
+  {
+    "Id": 105658,
+    "StyleName": "Size",
+    "StyleValue": "Euro 40"
+  },
+  {
+    "Id": 203336,
+    "StyleName": "Size",
+    "StyleValue": "Euro36"
+  },
+  {
+    "Id": 203335,
+    "StyleName": "Size",
+    "StyleValue": "Euro38"
+  },
+  {
+    "Id": 203337,
+    "StyleName": "Size",
+    "StyleValue": "Euro39"
+  },
+  {
+    "Id": 203333,
+    "StyleName": "Size",
+    "StyleValue": "Euro40"
+  },
+  {
+    "Id": 203334,
+    "StyleName": "Size",
+    "StyleValue": "Euro41"
+  },
+  {
+    "Id": 54260,
+    "StyleName": "Size",
+    "StyleValue": "F"
+  },
+  {
+    "Id": 114533,
+    "StyleName": "Size",
+    "StyleValue": "FEESIZE"
+  },
+  {
+    "Id": 142775,
+    "StyleName": "Size",
+    "StyleValue": "FREESIZE"
+  },
+  {
+    "Id": 70964,
+    "StyleName": "Size",
+    "StyleValue": "FS"
+  },
+  {
+    "Id": 142389,
+    "StyleName": "Size",
+    "StyleValue": "Feesize"
+  },
+  {
+    "Id": 187353,
+    "StyleName": "Size",
+    "StyleValue": "Freeesize"
+  },
+  {
+    "Id": 142280,
+    "StyleName": "Size",
+    "StyleValue": "Freesiize"
+  },
+  {
+    "Id": 33853,
+    "StyleName": "Size",
+    "StyleValue": "Freesize."
+  },
+  {
+    "Id": 313338,
+    "StyleName": "Size",
+    "StyleValue": "Freesize10ML"
+  },
+  {
+    "Id": 371801,
+    "StyleName": "Size",
+    "StyleValue": "Freesize11G"
+  },
+  {
+    "Id": 239803,
+    "StyleName": "Size",
+    "StyleValue": "Freesize25ML"
+  },
+  {
+    "Id": 33882,
+    "StyleName": "Size",
+    "StyleValue": "FreesizeS"
+  },
+  {
+    "Id": 120851,
+    "StyleName": "Size",
+    "StyleValue": "Freesize`"
+  },
+  {
+    "Id": 120521,
+    "StyleName": "Size",
+    "StyleValue": "Freesizes"
+  },
+  {
+    "Id": 54261,
+    "StyleName": "Size",
+    "StyleValue": "G"
+  },
+  {
+    "Id": 54262,
+    "StyleName": "Size",
+    "StyleValue": "H"
+  },
+  {
+    "Id": 54263,
+    "StyleName": "Size",
+    "StyleValue": "I"
+  },
+  {
+    "Id": 54264,
+    "StyleName": "Size",
+    "StyleValue": "J"
+  },
+  {
+    "Id": 55356,
+    "StyleName": "Size",
+    "StyleValue": "J1"
+  },
+  {
+    "Id": 763709,
+    "StyleName": "Size",
+    "StyleValue": "J2"
+  },
+  {
+    "Id": 763708,
+    "StyleName": "Size",
+    "StyleValue": "J3"
+  },
+  {
+    "Id": 4953,
+    "StyleName": "Size",
+    "StyleValue": "JUNIOR"
+  },
+  {
+    "Id": 39012,
+    "StyleName": "Size",
+    "StyleValue": "L"
+  },
+  {
+    "Id": 24506933,
+    "StyleName": "Size",
+    "StyleValue": "L  FS"
+  },
+  {
+    "Id": 132682,
+    "StyleName": "Size",
+    "StyleValue": "L/30"
+  },
+  {
+    "Id": 132671,
+    "StyleName": "Size",
+    "StyleValue": "L/32"
+  },
+  {
+    "Id": 89963,
+    "StyleName": "Size",
+    "StyleValue": "L/38"
+  },
+  {
+    "Id": 54508,
+    "StyleName": "Size",
+    "StyleValue": "L/42"
+  },
+  {
+    "Id": 137304,
+    "StyleName": "Size",
+    "StyleValue": "L/XL"
+  },
+  {
+    "Id": 188585,
+    "StyleName": "Size",
+    "StyleValue": "L`"
+  },
+  {
+    "Id": 184733,
+    "StyleName": "Size",
+    "StyleValue": "Large"
+  },
+  {
+    "Id": 39011,
+    "StyleName": "Size",
+    "StyleValue": "M"
+  },
+  {
+    "Id": 24506932,
+    "StyleName": "Size",
+    "StyleValue": "M  FS"
+  },
+  {
+    "Id": 151934,
+    "StyleName": "Size",
+    "StyleValue": "M-L"
+  },
+  {
+    "Id": 132679,
+    "StyleName": "Size",
+    "StyleValue": "M/30"
+  },
+  {
+    "Id": 132672,
+    "StyleName": "Size",
+    "StyleValue": "M/32"
+  },
+  {
+    "Id": 89962,
+    "StyleName": "Size",
+    "StyleValue": "M/36"
+  },
+  {
+    "Id": 54509,
+    "StyleName": "Size",
+    "StyleValue": "M/40"
+  },
+  {
+    "Id": 137303,
+    "StyleName": "Size",
+    "StyleValue": "M/L"
+  },
+  {
+    "Id": 956734,
+    "StyleName": "Size",
+    "StyleValue": "M1-2/W2-3"
+  },
+  {
+    "Id": 13725,
+    "StyleName": "Size",
+    "StyleValue": "M10"
+  },
+  {
+    "Id": 28167,
+    "StyleName": "Size",
+    "StyleValue": "M10-11/W12-13"
+  },
+  {
+    "Id": 55392,
+    "StyleName": "Size",
+    "StyleValue": "M10/W12"
+  },
+  {
+    "Id": 55391,
+    "StyleName": "Size",
+    "StyleValue": "M11"
+  },
+  {
+    "Id": 5162633,
+    "StyleName": "Size",
+    "StyleValue": "M12"
+  },
+  {
+    "Id": 5162634,
+    "StyleName": "Size",
+    "StyleValue": "M13"
+  },
+  {
+    "Id": 74893,
+    "StyleName": "Size",
+    "StyleValue": "M3-4/W4"
+  },
+  {
+    "Id": 956735,
+    "StyleName": "Size",
+    "StyleValue": "M3-4/W4-5"
+  },
+  {
+    "Id": 74854,
+    "StyleName": "Size",
+    "StyleValue": "M4-5/W6"
+  },
+  {
+    "Id": 55398,
+    "StyleName": "Size",
+    "StyleValue": "M4/W6"
+  },
+  {
+    "Id": 55397,
+    "StyleName": "Size",
+    "StyleValue": "M5/W7"
+  },
+  {
+    "Id": 74892,
+    "StyleName": "Size",
+    "StyleValue": "M6-7/W8"
+  },
+  {
+    "Id": 13589,
+    "StyleName": "Size",
+    "StyleValue": "M6-7/W8-9"
+  },
+  {
+    "Id": 55396,
+    "StyleName": "Size",
+    "StyleValue": "M6/W8"
+  },
+  {
+    "Id": 13727,
+    "StyleName": "Size",
+    "StyleValue": "M7"
+  },
+  {
+    "Id": 55395,
+    "StyleName": "Size",
+    "StyleValue": "M7/W9"
+  },
+  {
+    "Id": 13728,
+    "StyleName": "Size",
+    "StyleValue": "M8"
+  },
+  {
+    "Id": 74891,
+    "StyleName": "Size",
+    "StyleValue": "M8-9/W1"
+  },
+  {
+    "Id": 13591,
+    "StyleName": "Size",
+    "StyleValue": "M8-9/W10-11"
+  },
+  {
+    "Id": 55394,
+    "StyleName": "Size",
+    "StyleValue": "M8/W10"
+  },
+  {
+    "Id": 104364,
+    "StyleName": "Size",
+    "StyleValue": "M9"
+  },
+  {
+    "Id": 55393,
+    "StyleName": "Size",
+    "StyleValue": "M9/W11"
+  },
+  {
+    "Id": 184725,
+    "StyleName": "Size",
+    "StyleValue": "Medium"
+  },
+  {
+    "Id": 8059,
+    "StyleName": "Size",
+    "StyleValue": "NA"
+  },
+  {
+    "Id": 138649,
+    "StyleName": "Size",
+    "StyleValue": "NB"
+  },
+  {
+    "Id": 39441,
+    "StyleName": "Size",
+    "StyleValue": "ONESIZE"
+  },
+  {
+    "Id": 373350,
+    "StyleName": "Size",
+    "StyleValue": "ONESIZEFITSALL"
+  },
+  {
+    "Id": 39054,
+    "StyleName": "Size",
+    "StyleValue": "Onesize"
+  },
+  {
+    "Id": 39010,
+    "StyleName": "Size",
+    "StyleValue": "S"
+  },
+  {
+    "Id": 151935,
+    "StyleName": "Size",
+    "StyleValue": "S-M"
+  },
+  {
+    "Id": 132680,
+    "StyleName": "Size",
+    "StyleValue": "S/30"
+  },
+  {
+    "Id": 132669,
+    "StyleName": "Size",
+    "StyleValue": "S/32"
+  },
+  {
+    "Id": 89961,
+    "StyleName": "Size",
+    "StyleValue": "S/34"
+  },
+  {
+    "Id": 54510,
+    "StyleName": "Size",
+    "StyleValue": "S/39"
+  },
+  {
+    "Id": 88363,
+    "StyleName": "Size",
+    "StyleValue": "S/M"
+  },
+  {
+    "Id": 82860,
+    "StyleName": "Size",
+    "StyleValue": "SET"
+  },
+  {
+    "Id": 39295,
+    "StyleName": "Size",
+    "StyleValue": "SS"
+  },
+  {
+    "Id": 182980,
+    "StyleName": "Size",
+    "StyleValue": "UK1"
+  },
+  {
+    "Id": 39728,
+    "StyleName": "Size",
+    "StyleValue": "UK10"
+  },
+  {
+    "Id": 5033724,
+    "StyleName": "Size",
+    "StyleValue": "UK10.5"
+  },
+  {
+    "Id": 39727,
+    "StyleName": "Size",
+    "StyleValue": "UK11"
+  },
+  {
+    "Id": 78916,
+    "StyleName": "Size",
+    "StyleValue": "UK11.5"
+  },
+  {
+    "Id": 103626,
+    "StyleName": "Size",
+    "StyleValue": "UK12"
+  },
+  {
+    "Id": 182981,
+    "StyleName": "Size",
+    "StyleValue": "UK13"
+  },
+  {
+    "Id": 500463,
+    "StyleName": "Size",
+    "StyleValue": "UK14"
+  },
+  {
+    "Id": 500462,
+    "StyleName": "Size",
+    "StyleValue": "UK16"
+  },
+  {
+    "Id": 868974,
+    "StyleName": "Size",
+    "StyleValue": "UK18"
+  },
+  {
+    "Id": 42635,
+    "StyleName": "Size",
+    "StyleValue": "UK2"
+  },
+  {
+    "Id": 116274,
+    "StyleName": "Size",
+    "StyleValue": "UK22"
+  },
+  {
+    "Id": 39998,
+    "StyleName": "Size",
+    "StyleValue": "UK3"
+  },
+  {
+    "Id": 548302,
+    "StyleName": "Size",
+    "StyleValue": "UK3.5"
+  },
+  {
+    "Id": 39734,
+    "StyleName": "Size",
+    "StyleValue": "UK4"
+  },
+  {
+    "Id": 214567,
+    "StyleName": "Size",
+    "StyleValue": "UK4.5"
+  },
+  {
+    "Id": 39733,
+    "StyleName": "Size",
+    "StyleValue": "UK5"
+  },
+  {
+    "Id": 2046407,
+    "StyleName": "Size",
+    "StyleValue": "UK5.5"
+  },
+  {
+    "Id": 39732,
+    "StyleName": "Size",
+    "StyleValue": "UK6"
+  },
+  {
+    "Id": 5456061,
+    "StyleName": "Size",
+    "StyleValue": "UK6.5"
+  },
+  {
+    "Id": 39731,
+    "StyleName": "Size",
+    "StyleValue": "UK7"
+  },
+  {
+    "Id": 5033721,
+    "StyleName": "Size",
+    "StyleValue": "UK7.5"
+  },
+  {
+    "Id": 39730,
+    "StyleName": "Size",
+    "StyleValue": "UK8"
+  },
+  {
+    "Id": 262782,
+    "StyleName": "Size",
+    "StyleValue": "UK8.5"
+  },
+  {
+    "Id": 39729,
+    "StyleName": "Size",
+    "StyleValue": "UK9"
+  },
+  {
+    "Id": 262779,
+    "StyleName": "Size",
+    "StyleValue": "UK9.5"
+  },
+  {
+    "Id": 60482,
+    "StyleName": "Size",
+    "StyleValue": "US0"
+  },
+  {
+    "Id": 60481,
+    "StyleName": "Size",
+    "StyleValue": "US1"
+  },
+  {
+    "Id": 61875,
+    "StyleName": "Size",
+    "StyleValue": "US1.5"
+  },
+  {
+    "Id": 39133,
+    "StyleName": "Size",
+    "StyleValue": "US10"
+  },
+  {
+    "Id": 41068,
+    "StyleName": "Size",
+    "StyleValue": "US10.5"
+  },
+  {
+    "Id": 186424,
+    "StyleName": "Size",
+    "StyleValue": "US10C"
+  },
+  {
+    "Id": 39144,
+    "StyleName": "Size",
+    "StyleValue": "US11"
+  },
+  {
+    "Id": 41066,
+    "StyleName": "Size",
+    "StyleValue": "US11.5"
+  },
+  {
+    "Id": 186423,
+    "StyleName": "Size",
+    "StyleValue": "US11C"
+  },
+  {
+    "Id": 39154,
+    "StyleName": "Size",
+    "StyleValue": "US12"
+  },
+  {
+    "Id": 41064,
+    "StyleName": "Size",
+    "StyleValue": "US12.5"
+  },
+  {
+    "Id": 186422,
+    "StyleName": "Size",
+    "StyleValue": "US12C"
+  },
+  {
+    "Id": 335907,
+    "StyleName": "Size",
+    "StyleValue": "US13"
+  },
+  {
+    "Id": 186421,
+    "StyleName": "Size",
+    "StyleValue": "US13C"
+  },
+  {
+    "Id": 1812625,
+    "StyleName": "Size",
+    "StyleValue": "US14"
+  },
+  {
+    "Id": 103138,
+    "StyleName": "Size",
+    "StyleValue": "US15"
+  },
+  {
+    "Id": 397397,
+    "StyleName": "Size",
+    "StyleValue": "US16"
+  },
+  {
+    "Id": 397394,
+    "StyleName": "Size",
+    "StyleValue": "US18"
+  },
+  {
+    "Id": 60480,
+    "StyleName": "Size",
+    "StyleValue": "US2"
+  },
+  {
+    "Id": 61836,
+    "StyleName": "Size",
+    "StyleValue": "US2.5"
+  },
+  {
+    "Id": 397393,
+    "StyleName": "Size",
+    "StyleValue": "US20"
+  },
+  {
+    "Id": 397392,
+    "StyleName": "Size",
+    "StyleValue": "US22"
+  },
+  {
+    "Id": 60479,
+    "StyleName": "Size",
+    "StyleValue": "US3"
+  },
+  {
+    "Id": 59921,
+    "StyleName": "Size",
+    "StyleValue": "US3.5"
+  },
+  {
+    "Id": 41080,
+    "StyleName": "Size",
+    "StyleValue": "US4"
+  },
+  {
+    "Id": 59825,
+    "StyleName": "Size",
+    "StyleValue": "US4.5"
+  },
+  {
+    "Id": 41079,
+    "StyleName": "Size",
+    "StyleValue": "US5"
+  },
+  {
+    "Id": 41078,
+    "StyleName": "Size",
+    "StyleValue": "US5.5"
+  },
+  {
+    "Id": 25526,
+    "StyleName": "Size",
+    "StyleValue": "US5.6"
+  },
+  {
+    "Id": 39354,
+    "StyleName": "Size",
+    "StyleValue": "US6"
+  },
+  {
+    "Id": 39369,
+    "StyleName": "Size",
+    "StyleValue": "US6.5"
+  },
+  {
+    "Id": 39130,
+    "StyleName": "Size",
+    "StyleValue": "US7"
+  },
+  {
+    "Id": 39370,
+    "StyleName": "Size",
+    "StyleValue": "US7.5"
+  },
+  {
+    "Id": 185357,
+    "StyleName": "Size",
+    "StyleValue": "US7H"
+  },
+  {
+    "Id": 39131,
+    "StyleName": "Size",
+    "StyleValue": "US8"
+  },
+  {
+    "Id": 39371,
+    "StyleName": "Size",
+    "StyleValue": "US8.5"
+  },
+  {
+    "Id": 185359,
+    "StyleName": "Size",
+    "StyleValue": "US8H"
+  },
+  {
+    "Id": 39132,
+    "StyleName": "Size",
+    "StyleValue": "US9"
+  },
+  {
+    "Id": 39372,
+    "StyleName": "Size",
+    "StyleValue": "US9.5"
+  },
+  {
+    "Id": 186425,
+    "StyleName": "Size",
+    "StyleValue": "US9C"
+  },
+  {
+    "Id": 185358,
+    "StyleName": "Size",
+    "StyleValue": "US9H"
+  },
+  {
+    "Id": 201564,
+    "StyleName": "Size",
+    "StyleValue": "Uk12"
+  },
+  {
+    "Id": 59585,
+    "StyleName": "Size",
+    "StyleValue": "Uk7"
+  },
+  {
+    "Id": 21051,
+    "StyleName": "Size",
+    "StyleValue": "Uk8"
+  },
+  {
+    "Id": 22097,
+    "StyleName": "Size",
+    "StyleValue": "Uk9"
+  },
+  {
+    "Id": 55374,
+    "StyleName": "Size",
+    "StyleValue": "W10"
+  },
+  {
+    "Id": 763714,
+    "StyleName": "Size",
+    "StyleValue": "W2-3"
+  },
+  {
+    "Id": 149897,
+    "StyleName": "Size",
+    "StyleValue": "W30"
+  },
+  {
+    "Id": 149896,
+    "StyleName": "Size",
+    "StyleValue": "W32"
+  },
+  {
+    "Id": 149895,
+    "StyleName": "Size",
+    "StyleValue": "W34"
+  },
+  {
+    "Id": 149894,
+    "StyleName": "Size",
+    "StyleValue": "W36"
+  },
+  {
+    "Id": 149893,
+    "StyleName": "Size",
+    "StyleValue": "W38"
+  },
+  {
+    "Id": 755865,
+    "StyleName": "Size",
+    "StyleValue": "W4"
+  },
+  {
+    "Id": 149928,
+    "StyleName": "Size",
+    "StyleValue": "W40"
+  },
+  {
+    "Id": 55379,
+    "StyleName": "Size",
+    "StyleValue": "W5"
+  },
+  {
+    "Id": 55378,
+    "StyleName": "Size",
+    "StyleValue": "W6"
+  },
+  {
+    "Id": 55377,
+    "StyleName": "Size",
+    "StyleValue": "W7"
+  },
+  {
+    "Id": 55376,
+    "StyleName": "Size",
+    "StyleValue": "W8"
+  },
+  {
+    "Id": 55375,
+    "StyleName": "Size",
+    "StyleValue": "W9"
+  },
+  {
+    "Id": 46986,
+    "StyleName": "Size",
+    "StyleValue": "WG"
+  },
+  {
+    "Id": 46987,
+    "StyleName": "Size",
+    "StyleValue": "WL"
+  },
+  {
+    "Id": 46988,
+    "StyleName": "Size",
+    "StyleValue": "WM"
+  },
+  {
+    "Id": 46990,
+    "StyleName": "Size",
+    "StyleValue": "WP"
+  },
+  {
+    "Id": 46989,
+    "StyleName": "Size",
+    "StyleValue": "WS"
+  },
+  {
+    "Id": 46985,
+    "StyleName": "Size",
+    "StyleValue": "WVG"
+  },
+  {
+    "Id": 99417,
+    "StyleName": "Size",
+    "StyleValue": "WXL"
+  },
+  {
+    "Id": 99395,
+    "StyleName": "Size",
+    "StyleValue": "X"
+  },
+  {
+    "Id": 39013,
+    "StyleName": "Size",
+    "StyleValue": "XL"
+  },
+  {
+    "Id": 132707,
+    "StyleName": "Size",
+    "StyleValue": "XL/30"
+  },
+  {
+    "Id": 132670,
+    "StyleName": "Size",
+    "StyleValue": "XL/32"
+  },
+  {
+    "Id": 89964,
+    "StyleName": "Size",
+    "StyleValue": "XL/40"
+  },
+  {
+    "Id": 54507,
+    "StyleName": "Size",
+    "StyleValue": "XL/44"
+  },
+  {
+    "Id": 39231,
+    "StyleName": "Size",
+    "StyleValue": "XS"
+  },
+  {
+    "Id": 132681,
+    "StyleName": "Size",
+    "StyleValue": "XS/30"
+  },
+  {
+    "Id": 132673,
+    "StyleName": "Size",
+    "StyleValue": "XS/32"
+  },
+  {
+    "Id": 88362,
+    "StyleName": "Size",
+    "StyleValue": "XS/S"
+  },
+  {
+    "Id": 105797,
+    "StyleName": "Size",
+    "StyleValue": "XX"
+  },
+  {
+    "Id": 39022,
+    "StyleName": "Size",
+    "StyleValue": "XXL"
+  },
+  {
+    "Id": 54506,
+    "StyleName": "Size",
+    "StyleValue": "XXL/46"
+  },
+  {
+    "Id": 76260,
+    "StyleName": "Size",
+    "StyleValue": "XXL46"
+  },
+  {
+    "Id": 8289,
+    "StyleName": "Size",
+    "StyleValue": "XXS"
+  },
+  {
+    "Id": 8297,
+    "StyleName": "Size",
+    "StyleValue": "XXXL"
+  },
+  {
+    "Id": 1316195,
+    "StyleName": "Size",
+    "StyleValue": "XXl"
+  },
+  {
+    "Id": 188530,
+    "StyleName": "Size",
+    "StyleValue": "Xl"
+  },
+  {
+    "Id": 176101,
+    "StyleName": "Size",
+    "StyleValue": "l"
+  },
+  {
+    "Id": 149030,
+    "StyleName": "Size",
+    "StyleValue": "m"
+  },
+  {
+    "Id": 36990,
+    "StyleName": "Size",
+    "StyleValue": "onesize"
+  },
+  {
+    "Id": 116806,
+    "StyleName": "Size",
+    "StyleValue": "s"
+  },
+  {
+    "Id": 153510,
+    "StyleName": "Size",
+    "StyleValue": "uk11"
+  },
+  {
+    "Id": 153285,
+    "StyleName": "Size",
+    "StyleValue": "uk12"
+  },
+  {
+    "Id": 176195,
+    "StyleName": "Size",
+    "StyleValue": "uk5"
+  },
+  {
+    "Id": 182407,
+    "StyleName": "Size",
+    "StyleValue": "uk6"
+  },
+  {
+    "Id": 182406,
+    "StyleName": "Size",
+    "StyleValue": "uk7"
+  },
+  {
+    "Id": 182405,
+    "StyleName": "Size",
+    "StyleValue": "uk8"
+  },
+  {
+    "Id": 302108,
+    "StyleName": "Size",
+    "StyleValue": "uk9"
+  },
+  {
+    "Id": 167833,
+    "StyleName": "Size",
+    "StyleValue": "us10"
+  },
+  {
+    "Id": 167703,
+    "StyleName": "Size",
+    "StyleValue": "us12"
+  },
+  {
+    "Id": 169213,
+    "StyleName": "Size",
+    "StyleValue": "xl"
+  },
+  {
+    "Id": 263164,
+    "StyleName": "Size",
+    "StyleValue": "xs"
+  },
+  {
+    "Id": 169787,
+    "StyleName": "Size",
+    "StyleValue": "xxl"
+  }
+]

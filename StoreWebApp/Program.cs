@@ -2,13 +2,21 @@ using Microsoft.EntityFrameworkCore;
 using StoreWebApp.Components;
 using StoreWebApp.Models;
 
+// Use appsettings.json to configure the application
+var configuration_builder = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json");
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<MyDbContext>(options =>
-    options.UseSqlite("Data Source=store.db"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add IloginRepository to the services using the MyDbContext
 builder.Services.AddScoped<ILoginRepository>(provider => provider.GetRequiredService<MyDbContext>());
+
+// Add IProductRepository to the services using the MyDbContext
+builder.Services.AddScoped<IProductRepository>(provider => provider.GetRequiredService<MyDbContext>());
 
 // Add services to the container.
 builder.Services.AddRazorComponents()

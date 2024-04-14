@@ -1,0 +1,38 @@
+@page "/product/{ProductId:int}"
+@using StoreWebApp.Models
+@inject Models.IProductRepository ProductRepository
+
+<PageTitle>Product</PageTitle>
+
+@if (product != null)
+{
+    <div>
+        <h2>@product.ProductDisplayName</h2>
+        <img src="@product.ImageUrl" alt="@product.ProductDisplayName" style="width: 500px; height: auto;" />
+    </div>
+}
+else
+{
+    <p>Product not found.</p>
+}
+
+
+
+@code
+{
+    private Product? product;
+    [Parameter] public int ProductId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            product = await ProductRepository.GetProductByIdAsync(ProductId);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            product = null;
+        }
+    }
+}

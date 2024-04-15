@@ -6,7 +6,7 @@
 <PageTitle>Products</PageTitle>
 
 <h1>Products</h1>
-
+<p>Filter: @Filter</p>
 <EditForm Model="@InputData" OnSubmit="@FilterSubmit" FormName="FilterInput">
 	<InputText @bind-Value="InputData.FilterString" />
 	<button class="btn btn-primary" type="submit">Search</button>
@@ -36,17 +36,13 @@ else
 
 	public ProductsInput InputData { get; set; }
 
-	protected override void OnInitialized()
-	{
-		InputData = new ProductsInput();
-	}
 
 	protected override async Task OnInitializedAsync()
 	{
 		Console.WriteLine("\ninitial load\n");
 		try
 		{
-
+			InputData = new ProductsInput();
 			products = await ProductRepository.GetProductsAsync(PageNum, 20, InputData.FilterString);
 		}
 		catch (Exception ex)
@@ -58,16 +54,17 @@ else
 
 	public void FilterSubmit()
 	{
-		Console.WriteLine("\n FilterSubmit");
-		Console.WriteLine(InputData.FilterString);
-		Console.WriteLine(Filter);
-		// Filter = InputData.FilterString;
+		Console.WriteLine("\nFilterSubmit");
+		Console.WriteLine("Filter: " + Filter);
+		Console.WriteLine("InputData: " + InputData.FilterString);
+
+		Filter = InputData.FilterString;
 		// navManager.NavigateTo(string.Format("products/0/{0}", InputData.FilterString));
 
 	}
 
 	public class ProductsInput
 	{
-		public string? FilterString { get; set; } = "";
+		public string FilterString { get; set; } = "";
 	}
 }

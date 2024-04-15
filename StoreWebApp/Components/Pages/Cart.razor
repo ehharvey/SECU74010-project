@@ -1,16 +1,9 @@
 @page "/cart"
 @rendermode InteractiveServer
-@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
 @attribute [StreamRendering]
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
 
-@if (currentCount.HasValue)
-{
-    <p>Current count: @currentCount</p>
-}
-else
-{
-    <p>Current count: Loading...</p>
-}
+<p>Current count: @currentCount</p>
 <button @onclick='IncrementCount'>Increment</button>
 
 
@@ -18,19 +11,13 @@ else
     private int? currentCount = null;
     
 
-    protected override async void OnAfterRender(bool firstRender)
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (await LocalStorage.ContainKeyAsync("count"))
+        if (firstRender)
         {
             currentCount = await LocalStorage.GetItemAsync<int>("count");
+            StateHasChanged();
         }
-        else
-        {
-            currentCount = 0;
-            await LocalStorage.SetItemAsync("count", currentCount);
-        }
-
-        Console.WriteLine("Current count: " + currentCount);
     }
 
     private async Task IncrementCount()

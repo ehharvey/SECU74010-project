@@ -84,7 +84,7 @@ namespace StoreWebApp.Models
 
         List<Product> GetProducts(int page_number, int page_size = 20);
 
-        Task<List<Product>> GetProductsAsync(int page_number, int page_size = 20);
+        Task<List<Product>> GetProductsAsync(int page_number, int page_size = 20, string? Filter=null);
 
         Product? GetProductById(int id);
 

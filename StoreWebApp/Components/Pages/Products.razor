@@ -1,10 +1,17 @@
-@page "/products/{PageNum:int}"
+@page "/products/{PageNum:int}/{Filter?}"
 @using StoreWebApp.Components.Pieces
 @inject Models.IProductRepository ProductRepository
-
+@inject NavigationManager navManager
 <PageTitle>Products</PageTitle>
 
 <h1>Products</h1>
+
+<form method="GET">
+	<p>
+		Search: <input type="text" asp-for="Filter" />
+		<input type="submit" value="Filter" />
+	</p>
+</form>
 
 @if (products != null)
 {
@@ -20,23 +27,33 @@
 }
 else
 {
-    <p>No products found.</p>
+	<p>No products found.</p>
 }
 
 @code {
-    private IEnumerable<Models.Product>? products;
-    [Parameter] public int PageNum { get; set; }
+	private IEnumerable<Models.Product>? products;
+	[Parameter] public int PageNum { get; set; }
 
-    protected override async Task OnInitializedAsync()
-    {
-        try
-        {
-            products = await ProductRepository.GetProductsAsync(PageNum, 20);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-            products = null;
-        }
-    }
+	[Parameter]
+	public string? Filter { get; set; }
+
+	protected override async Task OnInitializedAsync()
+	{
+		Console.WriteLine("\ninitial load\n");
+		try
+		{
+			products = await ProductRepository.GetProductsAsync(PageNum, 20, Filter);
+		}
+		catch (Exception ex)
+		{
+			Console.WriteLine(ex.Message);
+			products = null;
+		}
+	}
+
+	public async Task OnGet()
+	{
+		Console.WriteLine("\n onGet " + Filter);
+		navManager.NavigateTo(string.Format("/0/{0}", Filter));
+	}
 }

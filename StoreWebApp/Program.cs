@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using StoreWebApp.Components;
 using StoreWebApp.Models;
+using Blazored.LocalStorage;
 
 // Use appsettings.json to configure the application
 var configuration_builder = new ConfigurationBuilder()
@@ -17,6 +18,9 @@ builder.Services.AddScoped<ILoginRepository>(provider => provider.GetRequiredSer
 
 // Add IProductRepository to the services using the MyDbContext
 builder.Services.AddScoped<IProductRepository>(provider => provider.GetRequiredService<MyDbContext>());
+
+builder.Services.AddBlazoredLocalStorage();
+
 
 // Add services to the container.
 builder.Services.AddRazorComponents()

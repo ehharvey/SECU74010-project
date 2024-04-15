@@ -6,10 +6,10 @@
 
 <h1>Products</h1>
 
-<form method="GET">
+<form asp-action="get" method="get">
 	<p>
 		Search: <input type="text" asp-for="Filter" />
-		<input type="submit" value="Filter" />
+		<input type="submit" value="Filter" formmethod="get"/>
 	</p>
 </form>
 
@@ -51,9 +51,9 @@ else
 		}
 	}
 
-	public async Task OnGet()
+	public async Task OnGet(string FilterVal)
 	{
-		Console.WriteLine("\n onGet " + Filter);
-		navManager.NavigateTo(string.Format("/0/{0}", Filter));
+		Console.WriteLine("\n onGet " + FilterVal);
+		navManager.NavigateTo(string.Format("/0/{0}", FilterVal));
 	}
 }

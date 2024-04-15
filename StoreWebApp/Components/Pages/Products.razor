@@ -1,17 +1,16 @@
 @page "/products/{PageNum:int}/{Filter?}"
 @using StoreWebApp.Components.Pieces
+@using StoreWebApp.Models
 @inject Models.IProductRepository ProductRepository
 @inject NavigationManager navManager
 <PageTitle>Products</PageTitle>
 
 <h1>Products</h1>
 
-<form asp-action="get" method="get">
-	<p>
-		Search: <input type="text" asp-for="Filter" />
-		<input type="submit" value="Filter" formmethod="get"/>
-	</p>
-</form>
+<EditForm Model="@InputData" OnSubmit="@FilterSubmit" FormName="FilterInput">
+	<InputText @bind-Value="InputData.FilterString" />
+	<button class="btn btn-primary" type="submit">Search</button>
+</EditForm>
 
 @if (products != null)
 {
@@ -33,16 +32,22 @@ else
 @code {
 	private IEnumerable<Models.Product>? products;
 	[Parameter] public int PageNum { get; set; }
+	[Parameter] public string? Filter { get; set; }
 
-	[Parameter]
-	public string? Filter { get; set; }
+	public ProductsInput InputData { get; set; }
+
+	protected override void OnInitialized()
+	{
+		InputData = new ProductsInput();
+	}
 
 	protected override async Task OnInitializedAsync()
 	{
 		Console.WriteLine("\ninitial load\n");
 		try
 		{
-			products = await ProductRepository.GetProductsAsync(PageNum, 20, Filter);
+
+			products = await ProductRepository.GetProductsAsync(PageNum, 20, InputData.FilterString);
 		}
 		catch (Exception ex)
 		{
@@ -51,9 +56,18 @@ else
 		}
 	}
 
-	public async Task OnGet(string FilterVal)
+	public void FilterSubmit()
 	{
-		Console.WriteLine("\n onGet " + FilterVal);
-		navManager.NavigateTo(string.Format("/0/{0}", FilterVal));
+		Console.WriteLine("\n FilterSubmit");
+		Console.WriteLine(InputData.FilterString);
+		Console.WriteLine(Filter);
+		// Filter = InputData.FilterString;
+		// navManager.NavigateTo(string.Format("products/0/{0}", InputData.FilterString));
+
+	}
+
+	public class ProductsInput
+	{
+		public string? FilterString { get; set; } = "";
 	}
 }

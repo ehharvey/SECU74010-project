@@ -1,0 +1,3 @@
+[submodule "geoinfo-dataset"]
+	path = geoinfo-dataset
+	url = https://github.com/djbelieny/geoinfo-dataset.git

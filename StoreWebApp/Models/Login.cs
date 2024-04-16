@@ -43,9 +43,5 @@ namespace StoreWebApp.Models
 
         // Make GetLoggedInUser() awaitable
         Task<string?> GetLoggedInUserAsync();
-
-        void SaveChanges();
-
-        Task SaveChangesAsync();  
     }
 }

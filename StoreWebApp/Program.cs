@@ -1,12 +1,16 @@
+
+using Microsoft.AspNetCore.Components.Server;
 using Microsoft.EntityFrameworkCore;
 using StoreWebApp.Components;
 using StoreWebApp.Models;
+using Blazored.LocalStorage;
 
 // Use appsettings.json to configure the application
 var configuration_builder = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json");
 
+// Builder for hybrid server-side and client-side Blazor applications
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<MyDbContext>(options =>
@@ -18,9 +22,17 @@ builder.Services.AddScoped<ILoginRepository>(provider => provider.GetRequiredSer
 // Add IProductRepository to the services using the MyDbContext
 builder.Services.AddScoped<IProductRepository>(provider => provider.GetRequiredService<MyDbContext>());
 
+builder.Services.AddScoped<IZipCodeRepository>(provider => provider.GetRequiredService<MyDbContext>());
+
+builder.Services.AddScoped<IPurchaseRepository>(provider => provider.GetRequiredService<MyDbContext>());
+
+builder.Services.AddBlazoredLocalStorage();
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddBlazorBootstrap();
 
 var app = builder.Build();
 
@@ -39,5 +51,6 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
 
 app.Run();

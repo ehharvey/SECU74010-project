@@ -8,12 +8,15 @@
 
 @if (products != null)
 {
-    @foreach (var product in products)
-    {
-        <ProductCard Product=@product />
-    }
+    <!-- Flex container for product cards -->
+    <div class="d-flex flex-wrap">
+        @foreach (var product in products)
+        {
+            <ProductCard Product=@product />
+        }
+    </div>
 
-    <Pagination PageNumber=@PageNum PageSize=20 />
+    <StoreWebApp.Components.Pieces.Pagination PageNumber=@PageNum PageSize=20 />
 }
 else
 {

@@ -306,21 +306,6 @@ namespace StoreWebAppDbSeeding
                 var lotto_slipper = context.Products.Find(19119);
                 var arrow_suspenders = context.Products.Find(3496);
                 var wildcraft_backpack = context.Products.Find(5270);
-
-                for (int i = 0; i < 20; i++)
-                {
-                    var purchase = new Purchase
-                    {
-                        Address = address,
-                        Products = new List<Product> { puma_shoe, lotto_slipper, arrow_suspenders, wildcraft_backpack },
-                        ProductIds = new List<int> { puma_shoe.Id, lotto_slipper.Id, arrow_suspenders.Id, wildcraft_backpack.Id },
-                        PurchaseDate = DateTime.Now,
-                    };
-                    context.Purchases.Add(purchase);
-                }
-                context.SaveChanges();
-
-                Console.WriteLine("Seeded some purchases");
             }
         }
     }

@@ -4,7 +4,7 @@ using StoreWebApp.Models;
 
 namespace StoreWebApp.Components
 {
-    public class MyDbContext : DbContext, ILoginRepository, IProductRepository
+    public class MyDbContext : DbContext, ILoginRepository, IProductRepository, IZipCodeRepository, IPurchaseRepository
     {
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
         {
@@ -33,6 +33,12 @@ namespace StoreWebApp.Components
 
         public DbSet<Usage> Usages { get; set; }
 
+        public DbSet<ZipCodeData> ZipCodes { get; set; }
+
+        public DbSet<Address> Addresses { get; set; }
+
+        public DbSet<Purchase> Purchases { get; set; }
+
         public void AddLogin(Login login)
         {
             throw new NotImplementedException();
@@ -43,6 +49,23 @@ namespace StoreWebApp.Components
             throw new NotImplementedException();
         }
 
+        public void AddPurchase(Purchase purchase)
+        {
+            Purchases.Add(purchase);
+            SaveChanges();
+        }
+
+        public Task AddPurchaseAsync(Purchase purchase)
+        {
+            Purchases.Add(purchase);
+            return SaveChangesAsync();
+        }
+
+        public void DeletePurchase(int id)
+        {
+            Purchases.Remove(GetPurchase(id));
+            SaveChanges();
+        }
 
         public string? GetLoggedInUser() => Logins.FirstOrDefault()?.Email;
 
@@ -86,9 +109,29 @@ namespace StoreWebApp.Components
             return Products.Skip(page_number * page_size).Take(page_size).ToListAsync();
         }
 
-        public Task SaveChangesAsync()
+        public Purchase GetPurchase(int id)
         {
-            return SaveChangesAsync();
+            return Purchases.Find(id);
+        }
+
+        public Task<Purchase> GetPurchaseAsync(int id)
+        {
+            return Purchases.FindAsync(id).AsTask();
+        }
+
+        public ZipCodeData GetZipCode(string zipCode)
+        {
+            return ZipCodes.Find(zipCode);
+        }
+
+        public async Task<ZipCodeData> GetZipCodeAsync(string zipCode)
+        {
+            return await ZipCodes.FindAsync(zipCode).AsTask();
+        }
+
+        public async Task<List<ZipCodeData>> GetZipCodesAsync(string zipCode, int results = 20)
+        {
+            return await ZipCodes.Where(z => z.ZipCode.StartsWith(zipCode)).ToListAsync();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -141,11 +184,17 @@ namespace StoreWebApp.Components
             
             modelBuilder.Entity<ProductToStyleOptionJunction>().HasOne<Product>(p => p.Product).WithMany().HasForeignKey(p => p.ProductId);
             modelBuilder.Entity<ProductToStyleOptionJunction>().HasOne<StyleOption>(p => p.StyleOption).WithMany().HasForeignKey(p => p.StyleOptionId);
-        }
 
-        void ILoginRepository.SaveChanges()
-        {
-            throw new NotImplementedException();
+            modelBuilder.Entity<ZipCodeData>().HasKey(i => i.ZipCode);
+            modelBuilder.Entity<Address>().HasKey(i => i.Id);
+            modelBuilder.Entity<Address>().HasOne<ZipCodeData>(a => a.ZipCodeData).WithMany().HasForeignKey(a => a.ZipCode);
+
+            modelBuilder.Entity<Purchase>().HasKey(i => i.Id);
+            modelBuilder.Entity<Purchase>().HasOne<Address>(p => p.Address).WithMany().HasForeignKey(p => p.AddressId);
+
+            modelBuilder.Entity<PurchaseToProductJunction>().HasKey(i => i.Id);
+            modelBuilder.Entity<PurchaseToProductJunction>().HasOne<Purchase>(p => p.Purchase).WithMany().HasForeignKey(p => p.PurchaseId);
+            modelBuilder.Entity<PurchaseToProductJunction>().HasOne<Product>(p => p.Product).WithMany().HasForeignKey(p => p.ProductId);
         }
     }
 }

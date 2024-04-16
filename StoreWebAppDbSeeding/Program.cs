@@ -188,7 +188,7 @@ namespace StoreWebAppDbSeeding
                     throw new Exception("Failed to seed style options");
                 }
 
-                // Clear all usages
+                // CleaMicrosoft.AspNetCore.Routing.RouteEndpointr all usages
                 context.Usages.RemoveRange(context.Usages);
                 context.SaveChanges();
                 Console.WriteLine("Cleared all usages");
@@ -255,6 +255,29 @@ namespace StoreWebAppDbSeeding
                 else
                 {
                     throw new Exception("Failed to seed product to style option junctions");
+                }
+
+                // Clear all zip codes
+                context.ZipCodes.RemoveRange(context.ZipCodes);
+                context.SaveChanges();
+                Console.WriteLine("Cleared all zip codes");
+
+                // Read ./seed_data/zip_codes.json and seed the database with the data
+                var zip_codes = JsonConvert.DeserializeObject<List<ZipCodeData>>(File.ReadAllText("./seed_data/zip_codes.json"));
+                if (zip_codes != null)
+                {
+                    for (int i = 0; i < zip_codes.Count; i += data_split_size)
+                    {
+                        var zip_codes_to_add = zip_codes.Skip(i).Take(data_split_size).ToList();
+                        context.ZipCodes.AddRange(zip_codes_to_add);
+                        context.SaveChanges();
+
+                        Console.WriteLine($"Seeded {zip_codes_to_add.Count} zip codes");
+                    }
+                }
+                else
+                {
+                    throw new Exception("Failed to seed zip codes");
                 }
             }
         }

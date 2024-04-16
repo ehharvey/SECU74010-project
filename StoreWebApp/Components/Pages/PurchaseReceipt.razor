@@ -1,0 +1,59 @@
+@inject IPurchaseRepository PurchaseRepository
+@inject ToastService ToastService
+@page "/purchase-receipt/{Id:int}"
+
+<div class="container">
+    @if (Purchase != null)
+    {
+        <div class="card">
+            <div class="card-header">
+                <h1>Purchase receipt</h1>
+            </div>
+            <div class="card-body">
+                <p>Id: @Purchase.Id</p>
+                <p>Date: @Purchase.PurchaseDate</p>
+                <p>Products:</p>
+                <ul>
+                    @foreach (var product in Purchase.Products)
+                    {
+                        <li>@product.ProductDisplayName - $@((decimal)product.Price / 100)</li>
+                    }
+                </ul>
+                <p>Total: $@(Total / 100)</p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Purchase not found</p>
+    }
+</div>
+
+
+
+@code
+{
+    [Parameter] public int Id { get; set; }
+
+    private Purchase? Purchase { get; set; }
+
+    int? Total;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("Purchase receipt initialized");
+        Purchase = await PurchaseRepository.GetPurchaseAsync(Id);
+
+        if (Purchase != null)
+        {
+            Total = Purchase.Products.Sum(p => p.Price);
+        }
+
+        ToastService.Notify(new ToastMessage
+        {
+            Title = "Purchase receipt",
+            Message = "Thank you for your purchase!",
+            AutoHide = true,
+        });
+    }
+}

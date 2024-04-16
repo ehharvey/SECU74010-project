@@ -1,30 +1,190 @@
 @page "/cart"
-@rendermode InteractiveServer
-@attribute [StreamRendering]
+@inherits CartMetaPage
+@using StoreWebApp.Components.Layout
 @inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject IProductRepository ProductRepository
+@inject IZipCodeRepository ZipCodeRepository
+@inject IPurchaseRepository PurchaseRepository
+@inject ToastService ToastService
+@inject NavigationManager NavigationManager
 
-<p>Current count: @currentCount</p>
-<button @onclick='IncrementCount'>Increment</button>
 
+@if (Products != null && Products.Any())
+{
+    <Button Color="ButtonColor.Primary" @onclick="OnShowModalClick">Checkout</Button>
+    <div class="d-flex flex-wrap">
+        @foreach (var product in Products)
+        {
+            <ProductCard Product="product" />
+        }
+    </div>
 
-@code {
-    private int? currentCount = null;
-    
+<Modal @ref="modal" Title="Checkout">
+    <BodyTemplate>
+        <form>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" @bind=Phone id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" @bind=Email id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="street">Street and Street Number</label>
+                <input type="text" @bind="StreetAndNumber" id="street" name="street">
+            </div>
+            <div class="form-group">
+                <label for="zip">Zip/Postal Code</label>
+                <AutoComplete TItem="ZipCodeData" @bind-Value="ZipCodeName" DataProvider="ZipCodeNameDataProvider" PropertyName="ZipCode" OnChanged="UpdateAddress" />
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" @bind="City" id="city" name="city" readonly />
+            </div>
+
+            <div class="form-group">
+                <label for="state">State/Province</label>
+                <input type="text" @bind="State" id="state" name="state" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" @bind="Country" id="country" name="country" readonly>
+            </div>
+
+        </form>
+    </BodyTemplate>
+    <FooterTemplate>
+        <Button Color="ButtonColor.Secondary" @onclick="OnHideModalClick">Close</Button>
+        <Button Color="ButtonColor.Primary" @onclick="Submit">Submit</Button>       
+    </FooterTemplate>
+</Modal>
+
+}
+else
+{
+    <p>No products found.</p>
+}
+
+@code
+{
+    private IEnumerable<Models.Product> Products;
+
+    private String? ZipCodeName;
+
+    private ZipCodeData? ZipCode;
+
+    private String? City;
+    private String? State;
+
+    private String? Country;
+
+    private String? StreetAndNumber;
+
+    private String? Phone;
+
+    private String? Email;
+
+    private async Task<IEnumerable<Models.Product>> GetProducts()
+    {
+        var cart = await GetCart();
+
+        var products = new List<Models.Product>();
+
+        foreach (var item in cart.Keys)
+        {
+            var product = await ProductRepository.GetProductByIdAsync(item);
+            
+            if (product != null)
+            {            
+                products.Add(product);
+            }
+        }
+        return products;
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            currentCount = await LocalStorage.GetItemAsync<int>("count");
+            Products = await GetProducts();
             StateHasChanged();
         }
     }
 
-    private async Task IncrementCount()
+    private BlazorBootstrap.Modal modal = default!;
+
+    private async Task OnShowModalClick()
     {
-        Console.WriteLine("Incrementing count");
-        currentCount++;
-        
-        await LocalStorage.SetItemAsync("count", currentCount);
+        await modal.ShowAsync();
     }
-}
+
+    private async Task OnHideModalClick()
+    {
+        await modal.HideAsync();
+    }
+
+    private BlazorBootstrap.ConfirmDialog confirmDialog = default!;
+
+
+    private async Task UpdateAddress(ZipCodeData zipCode)
+    {
+        if (zipCode != null)
+        {
+            await Task.Run(() =>
+            {
+                City = zipCode.City;
+                State = zipCode.State;
+                Country = zipCode.Country;
+            });
+        }
+        else
+        {
+            City = null;
+            State = null;
+            Country = null;
+        }
+    }
+
+    private async Task<AutoCompleteDataProviderResult<ZipCodeData>> ZipCodeNameDataProvider(AutoCompleteDataProviderRequest<ZipCodeData> searchText)
+    {
+        Console.WriteLine(searchText.Filter.Value);
+        var zipCodes = await ZipCodeRepository.GetZipCodesAsync(searchText.Filter.Value);
+
+        return await Task.FromResult(new AutoCompleteDataProviderResult<ZipCodeData>
+        {
+            Data = zipCodes,
+            TotalCount = zipCodes.Count()
+        });
+    }
+
+    private async Task Submit()
+    {
+        var products = await GetProducts();
+
+        var purchase = new Purchase
+        {
+            ProductIds = products.Select(p => p.Id).ToList(),
+            Products = products.ToList(),
+            Address = new Address
+            {
+                Street = StreetAndNumber,
+                Email = Email,
+                Phone = Phone,
+                ZipCode = ZipCodeName,
+                ZipCodeData = ZipCode
+            },
+            PurchaseDate = DateTime.Now,
+        };
+
+        await PurchaseRepository.AddPurchaseAsync(purchase);
+        await Task.Delay(500);
+
+        await ClearCart();
+
+        NavigationManager.NavigateTo($"/purchase-receipt/{purchase.Id}");
+    }
+}   

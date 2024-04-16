@@ -1,0 +1,72 @@
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+
+@code
+{
+    public async Task<Dictionary<int,int>> GetCart()
+    {
+        return await LocalStorage.GetItemAsync<Dictionary<int, int>>("cart")?? new Dictionary<int, int>();          
+    }
+
+    public async Task<int> GetTotalItemsInCart()
+    {
+        var cart = await GetCart();
+        return cart.Values.Sum();
+    }
+
+    public async Task AddItemToCart(int productId, int quantity)
+    {
+        Console.WriteLine("Adding item to cart");
+        var cart = await GetCart();
+        if (cart.ContainsKey(productId))
+        {
+            cart[productId] += quantity;
+        }
+        else
+        {
+            cart.Add(productId, quantity);
+        }
+
+        await LocalStorage.SetItemAsync("cart", cart);
+    }
+
+    public async Task<int> QuantityInCart(int productId)
+    {
+        var cart = await GetCart();
+        
+        if (cart.ContainsKey(productId))
+        {
+            return cart[productId];
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
+    public async Task ChangeItemQuantityInCart(int productId, int quantity)
+    {
+        var cart = await GetCart();
+        if (cart.ContainsKey(productId))
+        {
+            cart[productId] = quantity;
+        }
+
+        await LocalStorage.SetItemAsync("cart", cart);
+    }
+
+    public async Task RemoveItemFromCart(int productId)
+    {
+        var cart = await GetCart();
+        if (cart.ContainsKey(productId))
+        {
+            cart.Remove(productId);
+        }
+
+        await LocalStorage.SetItemAsync("cart", cart);
+    }
+
+    public async Task ClearCart()
+    {
+        await LocalStorage.RemoveItemAsync("cart");
+    }
+}

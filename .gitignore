@@ -32,3 +32,5 @@ npm-debug.log
 
 *.db
 *.db-*
+
+geoinfo-dataset/*

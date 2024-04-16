@@ -11,8 +11,8 @@ using StoreWebApp.Components;
 namespace StoreWebApp.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20240416021720_purchase")]
-    partial class purchase
+    [Migration("20240416115549_auth_receipt3")]
+    partial class auth_receipt3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -216,9 +216,6 @@ namespace StoreWebApp.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("PurchaseId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int?>("SeasonId")
                         .HasColumnType("INTEGER");
 
@@ -248,8 +245,6 @@ namespace StoreWebApp.Migrations
                     b.HasIndex("GenderId");
 
                     b.HasIndex("MasterCategoryId");
-
-                    b.HasIndex("PurchaseId");
 
                     b.HasIndex("SeasonId");
 
@@ -482,10 +477,6 @@ namespace StoreWebApp.Migrations
                         .WithMany()
                         .HasForeignKey("MasterCategoryId");
 
-                    b.HasOne("StoreWebApp.Models.Purchase", null)
-                        .WithMany("Products")
-                        .HasForeignKey("PurchaseId");
-
                     b.HasOne("StoreWebApp.Models.Season", "Season")
                         .WithMany()
                         .HasForeignKey("SeasonId");
@@ -568,11 +559,6 @@ namespace StoreWebApp.Migrations
                     b.Navigation("Product");
 
                     b.Navigation("Purchase");
-                });
-
-            modelBuilder.Entity("StoreWebApp.Models.Purchase", b =>
-                {
-                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

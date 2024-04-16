@@ -279,6 +279,48 @@ namespace StoreWebAppDbSeeding
                 {
                     throw new Exception("Failed to seed zip codes");
                 }
+
+                // Clear all addresses
+                context.Addresses.RemoveRange(context.Addresses);
+                context.SaveChanges();
+                Console.WriteLine("Cleared all addresses");
+
+                var zip = context.ZipCodes.Find("001W0");
+
+                var address = new Address
+                {
+                    Id = -1,
+                    Street = "1234 Elm St",
+                    ZipCode = "001W0",
+                    ZipCodeData = zip,
+                    Phone = "123-456-7890",
+                    Email = "test@example.com"
+                };
+
+                context.Addresses.Add(address);
+                context.SaveChanges();
+                Console.WriteLine("Seeded an address");
+
+
+                var puma_shoe = context.Products.Find(9355);
+                var lotto_slipper = context.Products.Find(19119);
+                var arrow_suspenders = context.Products.Find(3496);
+                var wildcraft_backpack = context.Products.Find(5270);
+
+                for (int i = 0; i < 20; i++)
+                {
+                    var purchase = new Purchase
+                    {
+                        Address = address,
+                        Products = new List<Product> { puma_shoe, lotto_slipper, arrow_suspenders, wildcraft_backpack },
+                        ProductIds = new List<int> { puma_shoe.Id, lotto_slipper.Id, arrow_suspenders.Id, wildcraft_backpack.Id },
+                        PurchaseDate = DateTime.Now,
+                    };
+                    context.Purchases.Add(purchase);
+                }
+                context.SaveChanges();
+
+                Console.WriteLine("Seeded some purchases");
             }
         }
     }

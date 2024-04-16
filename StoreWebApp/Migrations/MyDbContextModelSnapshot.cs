@@ -213,9 +213,6 @@ namespace StoreWebApp.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("PurchaseId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int?>("SeasonId")
                         .HasColumnType("INTEGER");
 
@@ -245,8 +242,6 @@ namespace StoreWebApp.Migrations
                     b.HasIndex("GenderId");
 
                     b.HasIndex("MasterCategoryId");
-
-                    b.HasIndex("PurchaseId");
 
                     b.HasIndex("SeasonId");
 
@@ -286,6 +281,10 @@ namespace StoreWebApp.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("AccountId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("AddressId")
                         .HasColumnType("INTEGER");
@@ -479,10 +478,6 @@ namespace StoreWebApp.Migrations
                         .WithMany()
                         .HasForeignKey("MasterCategoryId");
 
-                    b.HasOne("StoreWebApp.Models.Purchase", null)
-                        .WithMany("Products")
-                        .HasForeignKey("PurchaseId");
-
                     b.HasOne("StoreWebApp.Models.Season", "Season")
                         .WithMany()
                         .HasForeignKey("SeasonId");
@@ -565,11 +560,6 @@ namespace StoreWebApp.Migrations
                     b.Navigation("Product");
 
                     b.Navigation("Purchase");
-                });
-
-            modelBuilder.Entity("StoreWebApp.Models.Purchase", b =>
-                {
-                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

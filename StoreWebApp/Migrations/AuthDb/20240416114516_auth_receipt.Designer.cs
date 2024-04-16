@@ -11,8 +11,8 @@ using StoreWebApp.Models;
 namespace StoreWebApp.Migrations.AuthDb
 {
     [DbContext(typeof(AuthDbContext))]
-    [Migration("20240416032344_auth")]
-    partial class auth
+    [Migration("20240416114516_auth_receipt")]
+    partial class auth_receipt
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

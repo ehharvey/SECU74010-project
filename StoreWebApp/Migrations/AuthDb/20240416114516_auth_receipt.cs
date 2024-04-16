@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace StoreWebApp.Migrations.AuthDb
 {
     /// <inheritdoc />
-    public partial class auth : Migration
+    public partial class auth_receipt : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

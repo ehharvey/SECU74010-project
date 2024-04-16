@@ -11,8 +11,8 @@ using StoreWebApp.Components;
 namespace StoreWebApp.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20240416001920_zip_fix")]
-    partial class zip_fix
+    [Migration("20240416114953_auth_receipt2")]
+    partial class auth_receipt2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,7 +46,7 @@ namespace StoreWebApp.Migrations
 
                     b.HasIndex("ZipCode");
 
-                    b.ToTable("Address");
+                    b.ToTable("Addresses");
                 });
 
             modelBuilder.Entity("StoreWebApp.Models.AgeGroup", b =>
@@ -297,11 +297,14 @@ namespace StoreWebApp.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AddressId");
 
-                    b.ToTable("Purchase");
+                    b.ToTable("Purchases");
                 });
 
             modelBuilder.Entity("StoreWebApp.Models.PurchaseToProductJunction", b =>

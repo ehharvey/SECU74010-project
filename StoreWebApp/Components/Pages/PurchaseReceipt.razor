@@ -1,6 +1,7 @@
 @inject IPurchaseRepository PurchaseRepository
 @inject ToastService ToastService
-@rendermode InteractiveServer
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IProductRepository ProductRepository
 @page "/purchase-receipt/{Id:int}"
 
 <div class="container">
@@ -15,12 +16,12 @@
                 <p>Date: @Purchase.PurchaseDate</p>
                 <p>Products:</p>
                 <ul>
-                    @foreach (var product in Purchase.Products)
+                    @foreach (var product in Products.GroupBy(p => p.Id))
                     {
-                        <li>@product.ProductDisplayName - $@((decimal)product.Price / 100)</li>
+                        <li>Qty: @product.Count() | @product.FirstOrDefault().ProductDisplayName - $@((decimal)product.Sum(p => p.Price / (decimal)100.0))</li>
                     }
                 </ul>
-                <p>Total: $@(Total / 100)</p>
+                <p>Total: $@((decimal)Total / (decimal)100)</p>
             </div>
         </div>
     }
@@ -38,16 +39,23 @@
 
     private Purchase? Purchase { get; set; }
 
+    private List<Product>? Products { get; set; }
+
     int? Total;
 
     protected override async Task OnInitializedAsync()
     {
         Console.WriteLine("Purchase receipt initialized");
-        Purchase = await PurchaseRepository.GetPurchaseAsync(Id);
+        var purchase_temp = PurchaseRepository.GetPurchase(Id);
 
-        if (Purchase != null)
+        var user = (await AuthenticationStateProvider.GetAuthenticationStateAsync()).User;
+
+        
+        if (purchase_temp != null && purchase_temp.AccountId == user.Identity.Name)
         {
-            Total = Purchase.Products.Sum(p => p.Price);
+            Purchase = purchase_temp;
+            Products = purchase_temp.ProductIds.Select(p => ProductRepository.GetProductById(p)).ToList();
+            Total = Products.Sum(p => p.Price);
         }
 
         ToastService.Notify(new ToastMessage

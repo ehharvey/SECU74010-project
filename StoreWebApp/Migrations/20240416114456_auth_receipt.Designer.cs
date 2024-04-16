@@ -11,8 +11,8 @@ using StoreWebApp.Components;
 namespace StoreWebApp.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20240416001007_zips")]
-    partial class zips
+    [Migration("20240416114456_auth_receipt")]
+    partial class auth_receipt
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,7 +46,7 @@ namespace StoreWebApp.Migrations
 
                     b.HasIndex("ZipCode");
 
-                    b.ToTable("Address");
+                    b.ToTable("Addresses");
                 });
 
             modelBuilder.Entity("StoreWebApp.Models.AgeGroup", b =>
@@ -290,6 +290,10 @@ namespace StoreWebApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("AccountId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("AddressId")
                         .HasColumnType("INTEGER");
 
@@ -297,11 +301,14 @@ namespace StoreWebApp.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AddressId");
 
-                    b.ToTable("Purchase");
+                    b.ToTable("Purchases");
                 });
 
             modelBuilder.Entity("StoreWebApp.Models.PurchaseToProductJunction", b =>
@@ -392,15 +399,12 @@ namespace StoreWebApp.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("DstObserved")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("GmtOffset")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("GmtOffsetDST")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Latitude")
@@ -412,15 +416,12 @@ namespace StoreWebApp.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Npa")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Npanxx")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Nxx")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("State")

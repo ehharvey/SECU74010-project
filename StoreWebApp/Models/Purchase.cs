@@ -14,12 +14,11 @@ namespace StoreWebApp.Models
 
         public required Address Address { get; set; }  
 
-        [ForeignKey("Product")]
-        public required IEnumerable<int> ProductIds { get; set; }
-
-        public required IEnumerable<Product> Products { get; set; } 
+        public required List<int> ProductIds { get; set; }
 
         public required DateTime PurchaseDate { get; set; } 
+
+        public string AccountId { get; set; }
     }
 
     public interface IPurchaseRepository

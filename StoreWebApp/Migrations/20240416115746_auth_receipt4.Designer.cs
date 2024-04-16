@@ -11,14 +11,43 @@ using StoreWebApp.Components;
 namespace StoreWebApp.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20240414225051_Products_PriceFix")]
-    partial class Products_PriceFix
+    [Migration("20240416115746_auth_receipt4")]
+    partial class auth_receipt4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.4");
+
+            modelBuilder.Entity("StoreWebApp.Models.Address", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Street")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ZipCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ZipCode");
+
+                    b.ToTable("Addresses");
+                });
 
             modelBuilder.Entity("StoreWebApp.Models.AgeGroup", b =>
                 {
@@ -250,6 +279,54 @@ namespace StoreWebApp.Migrations
                     b.ToTable("ProductToStyleOptionJunctions");
                 });
 
+            modelBuilder.Entity("StoreWebApp.Models.Purchase", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("AccountId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("AddressId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ProductIds")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AddressId");
+
+                    b.ToTable("Purchases");
+                });
+
+            modelBuilder.Entity("StoreWebApp.Models.PurchaseToProductJunction", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("PurchaseId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("PurchaseId");
+
+                    b.ToTable("PurchaseToProductJunction");
+                });
+
             modelBuilder.Entity("StoreWebApp.Models.Season", b =>
                 {
                     b.Property<int>("Id")
@@ -297,6 +374,73 @@ namespace StoreWebApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usages");
+                });
+
+            modelBuilder.Entity("StoreWebApp.Models.ZipCodeData", b =>
+                {
+                    b.Property<string>("ZipCode")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CountryISO")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DstObserved")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("GmtOffset")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("GmtOffsetDST")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Latitude")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Longitude")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Npa")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Npanxx")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nxx")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("State")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("StateISO")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ZipCode");
+
+                    b.ToTable("ZipCodes");
+                });
+
+            modelBuilder.Entity("StoreWebApp.Models.Address", b =>
+                {
+                    b.HasOne("StoreWebApp.Models.ZipCodeData", "ZipCodeData")
+                        .WithMany()
+                        .HasForeignKey("ZipCode")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ZipCodeData");
                 });
 
             modelBuilder.Entity("StoreWebApp.Models.Product", b =>
@@ -389,6 +533,36 @@ namespace StoreWebApp.Migrations
                     b.Navigation("Product");
 
                     b.Navigation("StyleOption");
+                });
+
+            modelBuilder.Entity("StoreWebApp.Models.Purchase", b =>
+                {
+                    b.HasOne("StoreWebApp.Models.Address", "Address")
+                        .WithMany()
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Address");
+                });
+
+            modelBuilder.Entity("StoreWebApp.Models.PurchaseToProductJunction", b =>
+                {
+                    b.HasOne("StoreWebApp.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("StoreWebApp.Models.Purchase", "Purchase")
+                        .WithMany()
+                        .HasForeignKey("PurchaseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Purchase");
                 });
 #pragma warning restore 612, 618
         }

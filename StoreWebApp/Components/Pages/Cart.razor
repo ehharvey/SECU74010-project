@@ -7,6 +7,8 @@
 @inject IPurchaseRepository PurchaseRepository
 @inject ToastService ToastService
 @inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IProductRepository ProductRepository
 @rendermode InteractiveServer
 
 
@@ -166,10 +168,38 @@ else
     {
         var products = await GetProducts();
 
+        var cart = await GetCart();
+
+        string userId;
+        try
+        {
+            var user = (await AuthenticationStateProvider.GetAuthenticationStateAsync()).User;
+            userId = user.Identity.Name;
+        }
+        catch (Exception ex)
+        {
+            userId = "test@example.com";
+        }
+
+        var productsInCart = new List<Models.Product>();
+
+        foreach (var item in cart.Keys)
+        {
+            var product = await ProductRepository.GetProductByIdAsync(item);
+            var count = cart[item];
+
+            if (product != null)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    productsInCart.Add(product);
+                }
+            }
+        }
+
         var purchase = new Purchase
         {
-            ProductIds = products.Select(p => p.Id).ToList(),
-            Products = products.ToList(),
+            ProductIds = productsInCart.Select(p => p.Id).ToList(),
             Address = new Address
             {
                 Street = StreetAndNumber,
@@ -178,6 +208,7 @@ else
                 ZipCode = ZipCodeName,
                 ZipCodeData = ZipCode
             },
+            AccountId = userId,
             PurchaseDate = DateTime.Now,
         };
 

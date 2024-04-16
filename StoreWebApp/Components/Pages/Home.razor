@@ -3,17 +3,7 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
-
-@if (user != null)
-{
-    <p>Welcome, @user</p>
-}
-else
-{
-    <p>Welcome to your new app.</p>
-}
-
+<h1>Welcome to the Store</h1>
 @code {
     private string? user;
     protected override async Task OnInitializedAsync()

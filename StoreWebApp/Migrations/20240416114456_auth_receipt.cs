@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace StoreWebApp.Migrations
 {
     /// <inheritdoc />
-    public partial class Products : Migration
+    public partial class auth_receipt : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -136,13 +137,81 @@ namespace StoreWebApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "ZipCodes",
+                columns: table => new
+                {
+                    ZipCode = table.Column<string>(type: "TEXT", nullable: false),
+                    Npa = table.Column<string>(type: "TEXT", nullable: true),
+                    Nxx = table.Column<string>(type: "TEXT", nullable: true),
+                    Npanxx = table.Column<string>(type: "TEXT", nullable: true),
+                    City = table.Column<string>(type: "TEXT", nullable: false),
+                    State = table.Column<string>(type: "TEXT", nullable: false),
+                    StateISO = table.Column<string>(type: "TEXT", nullable: false),
+                    Country = table.Column<string>(type: "TEXT", nullable: false),
+                    CountryISO = table.Column<string>(type: "TEXT", nullable: false),
+                    GmtOffset = table.Column<string>(type: "TEXT", nullable: true),
+                    GmtOffsetDST = table.Column<string>(type: "TEXT", nullable: true),
+                    DstObserved = table.Column<string>(type: "TEXT", nullable: true),
+                    Latitude = table.Column<string>(type: "TEXT", nullable: false),
+                    Longitude = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ZipCodes", x => x.ZipCode);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Addresses",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    ZipCode = table.Column<string>(type: "TEXT", nullable: false),
+                    Street = table.Column<string>(type: "TEXT", nullable: false),
+                    Phone = table.Column<string>(type: "TEXT", nullable: false),
+                    Email = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Addresses", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Addresses_ZipCodes_ZipCode",
+                        column: x => x.ZipCode,
+                        principalTable: "ZipCodes",
+                        principalColumn: "ZipCode",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Purchases",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    AddressId = table.Column<int>(type: "INTEGER", nullable: false),
+                    ProductIds = table.Column<string>(type: "TEXT", nullable: false),
+                    PurchaseDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    AccountId = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Purchases", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Purchases_Addresses_AddressId",
+                        column: x => x.AddressId,
+                        principalTable: "Addresses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Price = table.Column<decimal>(type: "TEXT", nullable: false),
-                    DiscountedPrice = table.Column<decimal>(type: "TEXT", nullable: true),
+                    Price = table.Column<int>(type: "INTEGER", nullable: false),
+                    DiscountedPrice = table.Column<int>(type: "INTEGER", nullable: true),
                     ProductDisplayName = table.Column<string>(type: "TEXT", nullable: false),
                     CatalogAddDate = table.Column<int>(type: "INTEGER", nullable: false),
                     BrandId = table.Column<int>(type: "INTEGER", nullable: false),
@@ -157,7 +226,8 @@ namespace StoreWebApp.Migrations
                     MasterCategoryId = table.Column<int>(type: "INTEGER", nullable: true),
                     SubCategoryId = table.Column<int>(type: "INTEGER", nullable: true),
                     ArticleTypeId = table.Column<int>(type: "INTEGER", nullable: true),
-                    ImageUrl = table.Column<string>(type: "TEXT", nullable: false)
+                    ImageUrl = table.Column<string>(type: "TEXT", nullable: false),
+                    PurchaseId = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -210,6 +280,11 @@ namespace StoreWebApp.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
+                        name: "FK_Products_Purchases_PurchaseId",
+                        column: x => x.PurchaseId,
+                        principalTable: "Purchases",
+                        principalColumn: "Id");
+                    table.ForeignKey(
                         name: "FK_Products_Seasons_SeasonId",
                         column: x => x.SeasonId,
                         principalTable: "Seasons",
@@ -248,10 +323,41 @@ namespace StoreWebApp.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "PurchaseToProductJunction",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    PurchaseId = table.Column<int>(type: "INTEGER", nullable: false),
+                    ProductId = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PurchaseToProductJunction", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_PurchaseToProductJunction_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_PurchaseToProductJunction_Purchases_PurchaseId",
+                        column: x => x.PurchaseId,
+                        principalTable: "Purchases",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.InsertData(
                 table: "Logins",
                 columns: new[] { "Id", "Email", "Password" },
                 values: new object[] { -1, "test@example.com", "password" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Addresses_ZipCode",
+                table: "Addresses",
+                column: "ZipCode");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_AgeGroupId",
@@ -294,6 +400,11 @@ namespace StoreWebApp.Migrations
                 column: "MasterCategoryId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Products_PurchaseId",
+                table: "Products",
+                column: "PurchaseId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Products_SeasonId",
                 table: "Products",
                 column: "SeasonId");
@@ -317,6 +428,21 @@ namespace StoreWebApp.Migrations
                 name: "IX_ProductToStyleOptionJunctions_StyleOptionId",
                 table: "ProductToStyleOptionJunctions",
                 column: "StyleOptionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Purchases_AddressId",
+                table: "Purchases",
+                column: "AddressId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PurchaseToProductJunction_ProductId",
+                table: "PurchaseToProductJunction",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PurchaseToProductJunction_PurchaseId",
+                table: "PurchaseToProductJunction",
+                column: "PurchaseId");
         }
 
         /// <inheritdoc />
@@ -329,10 +455,13 @@ namespace StoreWebApp.Migrations
                 name: "ProductToStyleOptionJunctions");
 
             migrationBuilder.DropTable(
-                name: "Products");
+                name: "PurchaseToProductJunction");
 
             migrationBuilder.DropTable(
                 name: "StyleOptions");
+
+            migrationBuilder.DropTable(
+                name: "Products");
 
             migrationBuilder.DropTable(
                 name: "AgeGroups");
@@ -350,10 +479,19 @@ namespace StoreWebApp.Migrations
                 name: "Genders");
 
             migrationBuilder.DropTable(
+                name: "Purchases");
+
+            migrationBuilder.DropTable(
                 name: "Seasons");
 
             migrationBuilder.DropTable(
                 name: "Usages");
+
+            migrationBuilder.DropTable(
+                name: "Addresses");
+
+            migrationBuilder.DropTable(
+                name: "ZipCodes");
         }
     }
 }

@@ -137,9 +137,9 @@ namespace StoreWebApp.Components
 			return Purchases.Find(id);
 		}
 
-		public Task<Purchase> GetPurchaseAsync(int id)
+		public async Task<Purchase> GetPurchaseAsync(int id)
 		{
-			return Purchases.FindAsync(id).AsTask();
+			return await Purchases.FindAsync(id).AsTask();
 		}
 
 		public ZipCodeData GetZipCode(string zipCode)

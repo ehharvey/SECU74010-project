@@ -1,11 +1,19 @@
 @page "/products/{PageNum:int}"
-@using StoreWebApp.Components.Pieces
+@using StoreWebApp.Models
 @inject Models.IProductRepository ProductRepository
+@inject NavigationManager navManager
 @rendermode InteractiveServer
 
 <PageTitle>Products</PageTitle>
-
+<a id="top"></a>
 <h1>Products</h1>
+<form>
+	<div class="form-group">
+		<label for="filter">Search</label>
+		<input class="form-control" type="text" @bind="DisplayNameFilter">
+	</div>
+	<button class="btn btn-primary mt-1" type="button" @onclick="FilterSubmit">Search</button>
+</form>
 
 @if (products != null)
 {
@@ -13,31 +21,95 @@
     <div class="d-flex flex-wrap">
         @foreach (var product in products)
         {
-            <ProductCard Product=@product />
+            <StoreWebApp.Components.Pieces.ProductCard Product=@product />
         }
     </div>
 
-    <StoreWebApp.Components.Pieces.Pagination PageNumber=@PageNum PageSize=20 />
+	<div class="pagination">
+		<nav aria-label="Page navigation">
+			<ul class="pagination justify-content-center">
+				@if (PageNum > 0)
+				{
+					<li class="page-item">
+						<a class="page-link" href="/products/@((PageNum - 1) + QueryString)#top">Previous</a>
+					</li>
+				}
+
+				@for (int i = Math.Max(0, PageNum - PeekPages); i <= Math.Min(TotalPages, PageNum + PeekPages); i++)
+				{
+					<li class="page-item @(i == PageNum ? "active" : "")">
+						<a class="page-link" href="/products/@(i + QueryString)#top">@i</a>
+					</li>
+				}
+
+				@if (PageNum < TotalPages)
+				{
+					<li class="page-item">
+						<a class="page-link" href="/products/@((PageNum + 1) + QueryString)#top">Next</a>
+					</li>
+				}
+			</ul>
+		</nav>
+	</div>
 }
 else
 {
-    <p>No products found.</p>
+	<p>No products found.</p>
 }
 
 @code {
-    private IEnumerable<Models.Product>? products;
-    [Parameter] public int PageNum { get; set; }
+	private IEnumerable<Models.Product>? products;
+	[Parameter] public int PageNum { get; set; }
 
-    protected override async Task OnInitializedAsync()
-    {
-        try
-        {
-            products = await ProductRepository.GetProductsAsync(PageNum, 20);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-            products = null;
-        }
-    }
-}
+	public string? DisplayNameFilter { get; set; }
+
+	public string? QueryString { get; set; }
+
+	public int TotalPages { get; set; }
+
+	public int PeekPages { get; set; } = 5;
+
+	protected override async Task OnInitializedAsync()
+	{
+		if(Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(navManager.ToAbsoluteUri(navManager.Uri).Query).TryGetValue("DisplayNameFilter", out var filter))
+		{
+			DisplayNameFilter = filter;
+			QueryString = GetQueryString();
+			Console.WriteLine($"Filter: {DisplayNameFilter}");
+
+		}
+		
+
+		Console.WriteLine(navManager.Uri);
+		try
+		{
+			Console.WriteLine($"Searching for products with filter: {DisplayNameFilter}");
+			products = await ProductRepository.GetProductsAsync(PageNum, 20, DisplayNameFilter);
+			TotalPages = (int)Math.Ceiling(await ProductRepository.GetNumberOfProductsAsync(DisplayNameFilter) / 20.0) - 1;
+			StateHasChanged();
+		}
+		catch (Exception ex)
+		{
+			Console.WriteLine(ex.Message);
+			products = null;
+		}
+	}
+	public void FilterSubmit()
+	{
+		var uri = $"/products/0{GetQueryString()}";
+		navManager.NavigateTo(uri, forceLoad: true);
+	}
+
+	public string GetQueryString()
+	{
+		var encodedFilter = System.Web.HttpUtility.UrlEncode(DisplayNameFilter);
+		if (DisplayNameFilter != null)
+		{
+			return $"?DisplayNameFilter={encodedFilter}";
+		}
+		else
+		{
+			return "";
+		}
+	}
+}   

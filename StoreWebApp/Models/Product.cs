@@ -84,14 +84,14 @@ namespace StoreWebApp.Models
 
         List<Product> GetProducts(int page_number, int page_size = 20);
 
-        Task<List<Product>> GetProductsAsync(int page_number, int page_size = 20);
+        Task<List<Product>> GetProductsAsync(int page_number, int page_size = 20, string? Filter=null);
 
         Product? GetProductById(int id);
 
         Task<Product?> GetProductByIdAsync(int id);
 
-        int GetNumberOfProducts();
+        int GetNumberOfProducts(string? Filter=null);
 
-        Task<int> GetNumberOfProductsAsync();
+        Task<int> GetNumberOfProductsAsync(string? Filter=null);
     }
 }

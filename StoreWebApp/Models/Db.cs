@@ -79,14 +79,28 @@ namespace StoreWebApp.Components
 			throw new NotImplementedException();
 		}
 
-		public int GetNumberOfProducts()
+		public int GetNumberOfProducts(string? Filter = null)
 		{
-			return Products.Count();
+			if (string.IsNullOrEmpty(Filter))
+			{
+				return Products.Count();
+			}
+			else
+			{
+				return Products.Count(product => product.ProductDisplayName.Contains(Filter));
+			}
 		}
 
-		public Task<int> GetNumberOfProductsAsync()
+		public Task<int> GetNumberOfProductsAsync(string? Filter = null)
 		{
-			return Products.CountAsync();
+			if (string.IsNullOrEmpty(Filter))
+			{
+				return Products.CountAsync();
+			}
+			else
+			{
+				return Products.CountAsync(product => product.ProductDisplayName.Contains(Filter));
+			}
 		}
 
 		public Product? GetProductById(int id)
@@ -112,6 +126,7 @@ namespace StoreWebApp.Components
 			}
 			else
 			{
+				Console.WriteLine($"DB looking for {Filter}");
 				return Products.Where(product => product.ProductDisplayName.Contains(Filter))
 					.Skip(page_number * page_size).Take(page_size).ToListAsync();
 			}

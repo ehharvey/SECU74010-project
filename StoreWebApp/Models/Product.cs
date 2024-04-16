@@ -90,8 +90,8 @@ namespace StoreWebApp.Models
 
         Task<Product?> GetProductByIdAsync(int id);
 
-        int GetNumberOfProducts();
+        int GetNumberOfProducts(string? Filter=null);
 
-        Task<int> GetNumberOfProductsAsync();
+        Task<int> GetNumberOfProductsAsync(string? Filter=null);
     }
 }

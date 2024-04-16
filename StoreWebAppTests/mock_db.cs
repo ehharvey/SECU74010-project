@@ -35,17 +35,8 @@ namespace StoreWebAppTests
             return Task.FromResult(GetLoggedInUser());
         }
 
-        void ILoginRepository.SaveChanges()
-        {
-            throw new System.NotImplementedException();
-        }
 
         public Task AddLoginAsync(Login login)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Task SaveChangesAsync()
         {
             throw new System.NotImplementedException();
         }
